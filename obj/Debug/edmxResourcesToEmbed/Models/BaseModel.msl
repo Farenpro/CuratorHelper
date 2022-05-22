@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CuratorHelperModelStoreContainer" CdmEntityContainer="CuratorHelperEntities">
+    <EntitySetMapping Name="AppointedTeachers">
+      <EntityTypeMapping TypeName="CuratorHelperModel.AppointedTeacher">
+        <MappingFragment StoreEntitySet="AppointedTeachers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseWorks">
+      <EntityTypeMapping TypeName="CuratorHelperModel.CourseWork">
+        <MappingFragment StoreEntitySet="CourseWork">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="DisciplineID" ColumnName="DisciplineID" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credits">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Credit">
+        <MappingFragment StoreEntitySet="Credit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="DisciplineID" ColumnName="DisciplineID" />
+          <ScalarProperty Name="Term1Mark" ColumnName="Term1Mark" />
+          <ScalarProperty Name="Term2Mark" ColumnName="Term2Mark" />
+          <ScalarProperty Name="Term3Mark" ColumnName="Term3Mark" />
+          <ScalarProperty Name="Term4Mark" ColumnName="Term4Mark" />
+          <ScalarProperty Name="Term5Mark" ColumnName="Term5Mark" />
+          <ScalarProperty Name="Term6Mark" ColumnName="Term6Mark" />
+          <ScalarProperty Name="Term7Mark" ColumnName="Term7Mark" />
+          <ScalarProperty Name="Term8Mark" ColumnName="Term8Mark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DemoExams">
+      <EntityTypeMapping TypeName="CuratorHelperModel.DemoExam">
+        <MappingFragment StoreEntitySet="DemoExam">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DemoExamTypeID" ColumnName="DemoExamTypeID" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DemoExamTypes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.DemoExamType">
+        <MappingFragment StoreEntitySet="DemoExamType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disciplines">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Discipline">
+        <MappingFragment StoreEntitySet="Discipline">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="DisciplineIndexID" ColumnName="DisciplineIndexID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisciplineIndexes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.DisciplineIndex">
+        <MappingFragment StoreEntitySet="DisciplineIndex">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GraduateWorks">
+      <EntityTypeMapping TypeName="CuratorHelperModel.GraduateWork">
+        <MappingFragment StoreEntitySet="GraduateWork">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GraduateWorkTypeID" ColumnName="GraduateWorkTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProtectDate" ColumnName="ProtectDate" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="QualificationID" ColumnName="QualificationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GraduateWorkTypes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.GraduateWorkType">
+        <MappingFragment StoreEntitySet="GraduateWorkType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CuratorUserID" ColumnName="CuratorUserID" />
+          <ScalarProperty Name="SpecializationCode" ColumnName="SpecializationCode" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Objects">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Object">
+        <MappingFragment StoreEntitySet="Object">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Omissions">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Omission">
+        <MappingFragment StoreEntitySet="Omission">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OmissionTypeID" ColumnName="OmissionTypeID" />
+          <ScalarProperty Name="Term1Count" ColumnName="Term1Count" />
+          <ScalarProperty Name="Term2Count" ColumnName="Term2Count" />
+          <ScalarProperty Name="Term3Count" ColumnName="Term3Count" />
+          <ScalarProperty Name="Term4Count" ColumnName="Term4Count" />
+          <ScalarProperty Name="Term5Count" ColumnName="Term5Count" />
+          <ScalarProperty Name="Term6Count" ColumnName="Term6Count" />
+          <ScalarProperty Name="Term7Count" ColumnName="Term7Count" />
+          <ScalarProperty Name="Term8Count" ColumnName="Term8Count" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OmissionTypes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.OmissionType">
+        <MappingFragment StoreEntitySet="OmissionType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTypes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.OrderType">
+        <MappingFragment StoreEntitySet="OrderType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PenAndIncs">
+      <EntityTypeMapping TypeName="CuratorHelperModel.PenAndInc">
+        <MappingFragment StoreEntitySet="PenAndInc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PenAndIncTypeID" ColumnName="PenAndIncTypeID" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PenAndIncTypes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.PenAndIncType">
+        <MappingFragment StoreEntitySet="PenAndIncType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Practices">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Practice">
+        <MappingFragment StoreEntitySet="Practice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PracticeNameID" ColumnName="PracticeNameID" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="DaysDuratiion" ColumnName="DaysDuratiion" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PracticeIndexes">
+      <EntityTypeMapping TypeName="CuratorHelperModel.PracticeIndex">
+        <MappingFragment StoreEntitySet="PracticeIndex">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PracticeNames">
+      <EntityTypeMapping TypeName="CuratorHelperModel.PracticeName">
+        <MappingFragment StoreEntitySet="PracticeName">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PracticeIndexID" ColumnName="PracticeIndexID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Qualifications">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Qualification">
+        <MappingFragment StoreEntitySet="Qualification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specializations">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Specialization">
+        <MappingFragment StoreEntitySet="Specialization">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkProgramID" ColumnName="WorkProgramID" />
+          <ScalarProperty Name="StudyDuration" ColumnName="StudyDuration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="SpecializationCode" ColumnName="SpecializationCode" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="CompletedClassesID" ColumnName="CompletedClassesID" />
+          <ScalarProperty Name="SchoolGraduateDate" ColumnName="SchoolGraduateDate" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="GuardianAddress" ColumnName="GuardianAddress" />
+          <ScalarProperty Name="AimedAt" ColumnName="AimedAt" />
+          <ScalarProperty Name="CommunityService" ColumnName="CommunityService" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CuratorHelperModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="CuratorHelperModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherObjectTaughts">
+      <EntityTypeMapping TypeName="CuratorHelperModel.TeacherObjectTaught">
+        <MappingFragment StoreEntitySet="TeacherObjectTaught">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CuratorHelperModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkPrograms">
+      <EntityTypeMapping TypeName="CuratorHelperModel.WorkProgram">
+        <MappingFragment StoreEntitySet="WorkProgram">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

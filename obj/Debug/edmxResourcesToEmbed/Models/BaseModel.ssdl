@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CuratorHelperModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AppointedTeachers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CourseWork">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="FinishDate" Type="date" Nullable="false" />
+    <Property Name="DisciplineID" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Credit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="DisciplineID" Type="int" Nullable="false" />
+    <Property Name="Term1Mark" Type="int" />
+    <Property Name="Term2Mark" Type="int" />
+    <Property Name="Term3Mark" Type="int" />
+    <Property Name="Term4Mark" Type="int" />
+    <Property Name="Term5Mark" Type="int" />
+    <Property Name="Term6Mark" Type="int" />
+    <Property Name="Term7Mark" Type="int" />
+    <Property Name="Term8Mark" Type="int" />
+  </EntityType>
+  <EntityType Name="DemoExam">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="DemoExamTypeID" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DemoExamType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Discipline">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ObjectID" Type="int" Nullable="false" />
+    <Property Name="DisciplineIndexID" Type="int" />
+  </EntityType>
+  <EntityType Name="DisciplineIndex">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GraduateWork">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="GraduateWorkTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProtectDate" Type="date" Nullable="false" />
+    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="QualificationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GraduateWorkType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="CuratorUserID" Type="int" Nullable="false" />
+    <Property Name="SpecializationCode" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Object">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Omission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="OmissionTypeID" Type="int" Nullable="false" />
+    <Property Name="Term1Count" Type="int" />
+    <Property Name="Term2Count" Type="int" />
+    <Property Name="Term3Count" Type="int" />
+    <Property Name="Term4Count" Type="int" />
+    <Property Name="Term5Count" Type="int" />
+    <Property Name="Term6Count" Type="int" />
+    <Property Name="Term7Count" Type="int" />
+    <Property Name="Term8Count" Type="int" />
+    <Property Name="StudentID" Type="int" />
+  </EntityType>
+  <EntityType Name="OmissionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="OrderTypeID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="Course" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="OrderType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PenAndInc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="PenAndIncTypeID" Type="int" Nullable="false" />
+    <Property Name="Nature" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PenAndIncType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Practice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="PracticeNameID" Type="int" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DaysDuratiion" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PracticeIndex">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PracticeName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="PracticeIndexID" Type="int" />
+  </EntityType>
+  <EntityType Name="Qualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Specialization">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="WorkProgramID" Type="int" Nullable="false" />
+    <Property Name="StudyDuration" Type="int" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="SpecializationCode" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Birthdate" Type="date" />
+    <Property Name="GenderID" Type="int" />
+    <Property Name="BirthPlace" Type="nvarchar" MaxLength="100" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompletedClassesID" Type="int" />
+    <Property Name="SchoolGraduateDate" Type="date" />
+    <Property Name="SchoolName" Type="nvarchar" MaxLength="100" />
+    <Property Name="GuardianAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="AimedAt" Type="nvarchar" MaxLength="50" />
+    <Property Name="CommunityService" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="30" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeacherObjectTaught">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+    <Property Name="ObjectID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="30" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkProgram">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AppointedTeachers_Group">
+    <End Role="Group" Type="Self.Group" Multiplicity="1" />
+    <End Role="AppointedTeachers" Type="Self.AppointedTeachers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AppointedTeachers">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppointedTeachers_Teacher">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+    <End Role="AppointedTeachers" Type="Self.AppointedTeachers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AppointedTeachers">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseWork_Discipline">
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+    <End Role="CourseWork" Type="Self.CourseWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CourseWork">
+        <PropertyRef Name="DisciplineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseWork_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="CourseWork" Type="Self.CourseWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CourseWork">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Credit_Discipline">
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+    <End Role="Credit" Type="Self.Credit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Credit">
+        <PropertyRef Name="DisciplineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Credit_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Credit" Type="Self.Credit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Credit">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DemoExam_DemoExamName">
+    <End Role="DemoExamType" Type="Self.DemoExamType" Multiplicity="1" />
+    <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DemoExamType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DemoExam">
+        <PropertyRef Name="DemoExamTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DemoExam_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DemoExam">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_DisciplineType">
+    <End Role="DisciplineIndex" Type="Self.DisciplineIndex" Multiplicity="0..1" />
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DisciplineIndex">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Discipline">
+        <PropertyRef Name="DisciplineIndexID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_Object">
+    <End Role="Object" Type="Self.Object" Multiplicity="1" />
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Discipline">
+        <PropertyRef Name="ObjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GraduateWork_GraduateWorkType">
+    <End Role="GraduateWorkType" Type="Self.GraduateWorkType" Multiplicity="1" />
+    <End Role="GraduateWork" Type="Self.GraduateWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GraduateWorkType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GraduateWork">
+        <PropertyRef Name="GraduateWorkTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GraduateWork_Qualification">
+    <End Role="Qualification" Type="Self.Qualification" Multiplicity="1" />
+    <End Role="GraduateWork" Type="Self.GraduateWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Qualification">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GraduateWork">
+        <PropertyRef Name="QualificationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GraduateWork_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="GraduateWork" Type="Self.GraduateWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GraduateWork">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Group_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Group" Type="Self.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Group">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Group_Specialization">
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="1" />
+    <End Role="Group" Type="Self.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialization">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="Group">
+        <PropertyRef Name="SpecializationCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Group_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Group" Type="Self.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Group">
+        <PropertyRef Name="CuratorUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Omission_OmissionType">
+    <End Role="OmissionType" Type="Self.OmissionType" Multiplicity="1" />
+    <End Role="Omission" Type="Self.Omission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OmissionType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Omission">
+        <PropertyRef Name="OmissionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Omission_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Omission" Type="Self.Omission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Omission">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_OrderType">
+    <End Role="OrderType" Type="Self.OrderType" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="OrderTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PenAndInc_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="PenAndInc" Type="Self.PenAndInc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PenAndInc">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PenAndInc_PenAndIncType">
+    <End Role="PenAndIncType" Type="Self.PenAndIncType" Multiplicity="1" />
+    <End Role="PenAndInc" Type="Self.PenAndInc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PenAndIncType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PenAndInc">
+        <PropertyRef Name="PenAndIncTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PenAndInc_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="PenAndInc" Type="Self.PenAndInc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PenAndInc">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Practice_PracticeName">
+    <End Role="PracticeName" Type="Self.PracticeName" Multiplicity="1" />
+    <End Role="Practice" Type="Self.Practice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PracticeName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Practice">
+        <PropertyRef Name="PracticeNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Practice_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Practice" Type="Self.Practice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Practice">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PracticeName_PracticeIndex">
+    <End Role="PracticeIndex" Type="Self.PracticeIndex" Multiplicity="0..1" />
+    <End Role="PracticeName" Type="Self.PracticeName" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PracticeIndex">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PracticeName">
+        <PropertyRef Name="PracticeIndexID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Specialization_WorkProgram">
+    <End Role="WorkProgram" Type="Self.WorkProgram" Multiplicity="1" />
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkProgram">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Specialization">
+        <PropertyRef Name="WorkProgramID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_GenderID">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Group">
+    <End Role="Group" Type="Self.Group" Multiplicity="1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="GroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Specialization">
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialization">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="SpecializationCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Teacher_Gender">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeacherDisciplineTaught_Object">
+    <End Role="Object" Type="Self.Object" Multiplicity="1" />
+    <End Role="TeacherObjectTaught" Type="Self.TeacherObjectTaught" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TeacherObjectTaught">
+        <PropertyRef Name="ObjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeacherDisciplineTaught_Teacher">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+    <End Role="TeacherObjectTaught" Type="Self.TeacherObjectTaught" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TeacherObjectTaught">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Gender">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CuratorHelperModelStoreContainer">
+    <EntitySet Name="AppointedTeachers" EntityType="Self.AppointedTeachers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CourseWork" EntityType="Self.CourseWork" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Credit" EntityType="Self.Credit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DemoExam" EntityType="Self.DemoExam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DemoExamType" EntityType="Self.DemoExamType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DisciplineIndex" EntityType="Self.DisciplineIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GraduateWork" EntityType="Self.GraduateWork" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GraduateWorkType" EntityType="Self.GraduateWorkType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Group" EntityType="Self.Group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Object" EntityType="Self.Object" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Omission" EntityType="Self.Omission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OmissionType" EntityType="Self.OmissionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderType" EntityType="Self.OrderType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PenAndInc" EntityType="Self.PenAndInc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PenAndIncType" EntityType="Self.PenAndIncType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Practice" EntityType="Self.Practice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PracticeIndex" EntityType="Self.PracticeIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PracticeName" EntityType="Self.PracticeName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Qualification" EntityType="Self.Qualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Specialization" EntityType="Self.Specialization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeacherObjectTaught" EntityType="Self.TeacherObjectTaught" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkProgram" EntityType="Self.WorkProgram" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AppointedTeachers_Group" Association="Self.FK_AppointedTeachers_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="AppointedTeachers" EntitySet="AppointedTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppointedTeachers_Teacher" Association="Self.FK_AppointedTeachers_Teacher">
+      <End Role="Teacher" EntitySet="Teacher" />
+      <End Role="AppointedTeachers" EntitySet="AppointedTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseWork_Discipline" Association="Self.FK_CourseWork_Discipline">
+      <End Role="Discipline" EntitySet="Discipline" />
+      <End Role="CourseWork" EntitySet="CourseWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseWork_Student" Association="Self.FK_CourseWork_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="CourseWork" EntitySet="CourseWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Credit_Discipline" Association="Self.FK_Credit_Discipline">
+      <End Role="Discipline" EntitySet="Discipline" />
+      <End Role="Credit" EntitySet="Credit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Credit_Student" Association="Self.FK_Credit_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Credit" EntitySet="Credit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DemoExam_DemoExamName" Association="Self.FK_DemoExam_DemoExamName">
+      <End Role="DemoExamType" EntitySet="DemoExamType" />
+      <End Role="DemoExam" EntitySet="DemoExam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DemoExam_Student" Association="Self.FK_DemoExam_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="DemoExam" EntitySet="DemoExam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_DisciplineType" Association="Self.FK_Discipline_DisciplineType">
+      <End Role="DisciplineIndex" EntitySet="DisciplineIndex" />
+      <End Role="Discipline" EntitySet="Discipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_Object" Association="Self.FK_Discipline_Object">
+      <End Role="Object" EntitySet="Object" />
+      <End Role="Discipline" EntitySet="Discipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GraduateWork_GraduateWorkType" Association="Self.FK_GraduateWork_GraduateWorkType">
+      <End Role="GraduateWorkType" EntitySet="GraduateWorkType" />
+      <End Role="GraduateWork" EntitySet="GraduateWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GraduateWork_Qualification" Association="Self.FK_GraduateWork_Qualification">
+      <End Role="Qualification" EntitySet="Qualification" />
+      <End Role="GraduateWork" EntitySet="GraduateWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GraduateWork_Student" Association="Self.FK_GraduateWork_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="GraduateWork" EntitySet="GraduateWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Group_Department" Association="Self.FK_Group_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Group" EntitySet="Group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Group_Specialization" Association="Self.FK_Group_Specialization">
+      <End Role="Specialization" EntitySet="Specialization" />
+      <End Role="Group" EntitySet="Group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Group_User" Association="Self.FK_Group_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Group" EntitySet="Group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Omission_OmissionType" Association="Self.FK_Omission_OmissionType">
+      <End Role="OmissionType" EntitySet="OmissionType" />
+      <End Role="Omission" EntitySet="Omission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Omission_Student" Association="Self.FK_Omission_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Omission" EntitySet="Omission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_OrderType" Association="Self.FK_Order_OrderType">
+      <End Role="OrderType" EntitySet="OrderType" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Student" Association="Self.FK_Order_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PenAndInc_Order" Association="Self.FK_PenAndInc_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="PenAndInc" EntitySet="PenAndInc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PenAndInc_PenAndIncType" Association="Self.FK_PenAndInc_PenAndIncType">
+      <End Role="PenAndIncType" EntitySet="PenAndIncType" />
+      <End Role="PenAndInc" EntitySet="PenAndInc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PenAndInc_Student" Association="Self.FK_PenAndInc_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="PenAndInc" EntitySet="PenAndInc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Practice_PracticeName" Association="Self.FK_Practice_PracticeName">
+      <End Role="PracticeName" EntitySet="PracticeName" />
+      <End Role="Practice" EntitySet="Practice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Practice_Student" Association="Self.FK_Practice_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Practice" EntitySet="Practice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PracticeName_PracticeIndex" Association="Self.FK_PracticeName_PracticeIndex">
+      <End Role="PracticeIndex" EntitySet="PracticeIndex" />
+      <End Role="PracticeName" EntitySet="PracticeName" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Specialization_WorkProgram" Association="Self.FK_Specialization_WorkProgram">
+      <End Role="WorkProgram" EntitySet="WorkProgram" />
+      <End Role="Specialization" EntitySet="Specialization" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_GenderID" Association="Self.FK_Student_GenderID">
+      <End Role="Gender" EntitySet="Gender" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Group" Association="Self.FK_Student_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Specialization" Association="Self.FK_Student_Specialization">
+      <End Role="Specialization" EntitySet="Specialization" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teacher_Gender" Association="Self.FK_Teacher_Gender">
+      <End Role="Gender" EntitySet="Gender" />
+      <End Role="Teacher" EntitySet="Teacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeacherDisciplineTaught_Object" Association="Self.FK_TeacherDisciplineTaught_Object">
+      <End Role="Object" EntitySet="Object" />
+      <End Role="TeacherObjectTaught" EntitySet="TeacherObjectTaught" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeacherDisciplineTaught_Teacher" Association="Self.FK_TeacherDisciplineTaught_Teacher">
+      <End Role="Teacher" EntitySet="Teacher" />
+      <End Role="TeacherObjectTaught" EntitySet="TeacherObjectTaught" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Gender" Association="Self.FK_User_Gender">
+      <End Role="Gender" EntitySet="Gender" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
