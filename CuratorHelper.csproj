@@ -88,6 +88,7 @@
     <Compile Include="Models\AppointedTeacher.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\AppointedTeachersPartial.cs" />
     <Compile Include="Models\BaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,6 +137,7 @@
     <Compile Include="Models\Group.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GroupPartial.cs" />
     <Compile Include="Models\Object.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -187,17 +189,41 @@
     <Compile Include="Models\TeacherObjectTaught.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TeacherObjectTaughtPartial.cs" />
+    <Compile Include="Models\TeacherPartial.cs" />
     <Compile Include="Models\User.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserPartial.cs" />
     <Compile Include="Models\WorkProgram.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\AddGroupPage.xaml.cs">
+      <DependentUpon>AddGroupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddTeacherPage.xaml.cs">
+      <DependentUpon>AddTeacherPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AppointedTeachersEditPage.xaml.cs">
+      <DependentUpon>AppointedTeachersEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\CuratorEditPage.xaml.cs">
+      <DependentUpon>CuratorEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\TeacherEditPage.xaml.cs">
+      <DependentUpon>TeacherEditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\GroupsPage.xaml.cs">
+      <DependentUpon>GroupsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\TeachersPage.xaml.cs">
+      <DependentUpon>TeachersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditInfoWindow.xaml.cs">
       <DependentUpon>EditInfoWindow.xaml</DependentUpon>
@@ -236,48 +262,44 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Resources\TeachersPhoto\teacher9.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Plug.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Models\BaseModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BaseModel.edmx</DependentUpon>
-      <LastGenOutput>BaseModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\BaseModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BaseModel.edmx</DependentUpon>
-      <LastGenOutput>BaseModel.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\StudentsPhoto\student4.jpg" />
-    <Resource Include="Resources\StudentsPhoto\student2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\UsersPhoto\user1.jpg" />
-    <Resource Include="Resources\UsersPhoto\user2.jpg" />
-    <Resource Include="Resources\UsersPhoto\user3.jpg" />
-    <Resource Include="Resources\UsersPhoto\user4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\TeachersPhoto\teacher10.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\TeachersPhoto\teacher7.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Pages\AuthorizationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\AddGroupPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddTeacherPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AppointedTeachersEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\CuratorEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\TeacherEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\GroupsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\TeachersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -292,6 +314,21 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\BaseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+      <LastGenOutput>BaseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel.edmx</DependentUpon>
+      <LastGenOutput>BaseModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />

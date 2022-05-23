@@ -3,8 +3,40 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:res="clr-namespace:CuratorHelper.Properties"
-      Title="{x:Static res:Resources.MainMenu}" Height="800" Width="800" MinHeight="800" MinWidth="800" FontFamily="{StaticResource FontMain}">
-    <Grid>
-        
+      Title="{x:Static res:Resources.MainMenu}" Height="800" Width="800" MinHeight="400" MinWidth="400" FontFamily="{StaticResource FontMain}">
+    <Grid VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{DynamicResource PrimaryHueLightBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="{Binding RoleName}" VerticalAlignment="Center" Style="{StaticResource LHead}"/>
+            <ComboBox x:Name="CBoxProfile" Grid.Column="2" Margin="0,0,20,0" HorizontalAlignment="Left" Height="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Cursor="Hand" 
+                      Text="{Binding ElementName=CBoxItemFIO, Path=Content}" IsReadOnly="True" FontSize="15" IsEditable="True" SelectionChanged="CBoxProfile_SelectionChanged">
+                <ComboBoxItem x:Name="CBoxItemFIO" Content="{Binding FI}" Visibility="Collapsed"/>
+                <ComboBoxItem Content="{x:Static res:Resources.Exit}"/>
+            </ComboBox>
+        </Grid>
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" materialDesign:ScrollViewerAssist.SupportHorizontalScroll="True">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="BtnTeachers" Margin="5" Content="{x:Static res:Resources.Teachers}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnTeachers_Click"/>
+                <Button x:Name="BtnGroups" Margin="5" Content="{x:Static res:Resources.Groups}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnGroups_Click"/>
+                <Button x:Name="BtnStudents" Margin="5" Content="{x:Static res:Resources.Students}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnStudents_Click"/>
+                <Button x:Name="BtnOrders" Margin="5" Content="{x:Static res:Resources.Orders}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOrders_Click"/>
+                <Button x:Name="BtnObjAndDisc" Margin="5" Content="{x:Static res:Resources.ObjectsAndDisciplines}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnObjAndDisc_Click"/>
+                <Button x:Name="BtnPractics" Margin="5" Content="{x:Static res:Resources.Practics}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnPractics_Click"/>
+                <Button x:Name="BtnDemoExams" Margin="5" Content="{x:Static res:Resources.DemoExams}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDemoExams_Click"/>
+                <Button x:Name="BtnMyGroups" Margin="5" Content="{x:Static res:Resources.MyGroups}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnMyGroups_Click"/>
+                <Button x:Name="BtnMarks" Margin="5" Content="{x:Static res:Resources.Marks}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnMarks_Click"/>
+                <Button x:Name="BtnOmissions" Margin="5" Content="{x:Static res:Resources.Omissions}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOmissions_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Frame x:Name="MainPageFrame" Margin="5" Grid.Row="2" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
     </Grid>
 </Page>

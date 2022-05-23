@@ -26,7 +26,6 @@ namespace CuratorHelper.Models
         public string Middlename { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public string Photo { get; set; }
         public int RoleID { get; set; }
         public int GenderID { get; set; }
     

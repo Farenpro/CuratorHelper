@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using CuratorHelper.Pages.EditPages;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Windows
 {
@@ -19,9 +11,27 @@ namespace CuratorHelper.Windows
     /// </summary>
     public partial class EditInfoWindow : Window
     {
-        public EditInfoWindow()
+        public EditInfoWindow(byte type)
         {
             InitializeComponent();
+            switch (type)
+            {
+                case 1:
+                    MainFrame.Navigate(new AddTeacherPage());
+                    break;
+                case 2:
+                    MainFrame.Navigate(new TeacherEditPage());
+                    break;
+                case 3:
+                    MainFrame.Navigate(new AddGroupPage());
+                    break;
+                case 4:
+                    MainFrame.Navigate(new AppointedTeachersEditPage());
+                    break;
+                case 5:
+                    MainFrame.Navigate(new CuratorEditPage());
+                    break;
+            }
         }
     }
 }

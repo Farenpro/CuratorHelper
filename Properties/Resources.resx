@@ -117,17 +117,83 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AddCongrats" xml:space="preserve">
+    <value>Успешно добавлено!</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>Добавить группу</value>
+  </data>
+  <data name="AddTeacher" xml:space="preserve">
+    <value>Добавить преподавателя</value>
+  </data>
   <data name="Authorization" xml:space="preserve">
     <value>Авторизация</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Curator" xml:space="preserve">
+    <value>Куратор</value>
   </data>
   <data name="CuratorHelper" xml:space="preserve">
     <value>Помощник куратора</value>
   </data>
+  <data name="CurCurator" xml:space="preserve">
+    <value>Текущий куратор</value>
+  </data>
   <data name="DatabaseError" xml:space="preserve">
     <value>Соединение с БД не установлено. Проверьте наличие БД в MSSQL, а также строку подключения</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DemoExams" xml:space="preserve">
+    <value>Демо-экзамены</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Отделение</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="EditAppointedTeachers" xml:space="preserve">
+    <value>Изменить прикрепленных преподавателей</value>
+  </data>
+  <data name="EditCongrats" xml:space="preserve">
+    <value>Успешно изменено</value>
+  </data>
+  <data name="EditCurCurator" xml:space="preserve">
+    <value>Изменить текущего куратора группы</value>
+  </data>
+  <data name="EditObjects" xml:space="preserve">
+    <value>Изменить предметы</value>
+  </data>
+  <data name="EditTeacherObjects" xml:space="preserve">
+    <value>Изменить преподаваемые предметы</value>
+  </data>
   <data name="Enter" xml:space="preserve">
     <value>Войти</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Firstname" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="GroupExists" xml:space="preserve">
+    <value>Такая группа уже существует</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Название группы</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Группы</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Логин</value>
@@ -138,13 +204,85 @@
   <data name="MainMenu" xml:space="preserve">
     <value>Главное меню</value>
   </data>
+  <data name="Marks" xml:space="preserve">
+    <value>Оценки</value>
+  </data>
+  <data name="Middlename" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="MyGroups" xml:space="preserve">
+    <value>Мои группы</value>
+  </data>
   <data name="NeedToFillRequired" xml:space="preserve">
     <value>Вам необходимо заполнить все обязательные поля</value>
+  </data>
+  <data name="ObjectCountZero" xml:space="preserve">
+    <value>Вы не выбрали предметы на удаление</value>
+  </data>
+  <data name="ObjectsAndDisciplines" xml:space="preserve">
+    <value>Предметы и дисциплины</value>
+  </data>
+  <data name="Omissions" xml:space="preserve">
+    <value>Пропуски</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Приказы</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
   </data>
+  <data name="PhotoEdit" xml:space="preserve">
+    <value>Смена/Удаление фото</value>
+  </data>
+  <data name="PhotoEditOpen" xml:space="preserve">
+    <value>Открыть окно смены/удаления фото</value>
+  </data>
+  <data name="Pin" xml:space="preserve">
+    <value>Прикрепить</value>
+  </data>
+  <data name="Practics" xml:space="preserve">
+    <value>Практики</value>
+  </data>
   <data name="RequiredFillIn" xml:space="preserve">
     <value>Обязательно для заполнения</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SaveCongrats" xml:space="preserve">
+    <value>Успешно сохранено!</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Секретарь</value>
+  </data>
+  <data name="Specialization" xml:space="preserve">
+    <value>Специальность</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Студенты</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="TeacherAlreadyPined" xml:space="preserve">
+    <value>Преподаватель уже прикреплен</value>
+  </data>
+  <data name="TeacherAlreadyTaught" xml:space="preserve">
+    <value>Преподаватель уже преподает данный предмет</value>
+  </data>
+  <data name="TeacherExists" xml:space="preserve">
+    <value>Преподаватель уже существует</value>
+  </data>
+  <data name="Teachers" xml:space="preserve">
+    <value>Преподаватели</value>
+  </data>
+  <data name="TeachersCountZero" xml:space="preserve">
+    <value>Вы не выбрали преподавателей на открепление</value>
+  </data>
+  <data name="TooMuchGroups" xml:space="preserve">
+    <value>У данного куратора уже имеются 2 группы, хотите продолжить?</value>
+  </data>
+  <data name="Unpin" xml:space="preserve">
+    <value>Открепить</value>
   </data>
 </root>

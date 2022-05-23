@@ -36,7 +36,6 @@ namespace CuratorHelper.Models
         public Nullable<System.DateTime> Birthdate { get; set; }
         public Nullable<int> GenderID { get; set; }
         public string BirthPlace { get; set; }
-        public string Photo { get; set; }
         public Nullable<int> CompletedClassesID { get; set; }
         public Nullable<System.DateTime> SchoolGraduateDate { get; set; }
         public string SchoolName { get; set; }

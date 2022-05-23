@@ -4,38 +4,38 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1b17860994924b789c7302d4be7f699c" Name="Diagram1">
-        <EntityTypeShape EntityType="CuratorHelperModel.AppointedTeacher" Width="1.5" PointX="5.25" PointY="25.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.CourseWork" Width="1.5" PointX="8.25" PointY="18.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Credit" Width="1.5" PointX="8.25" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.DemoExam" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.DemoExamType" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Department" Width="1.5" PointX="12" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Discipline" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.DisciplineIndex" Width="1.5" PointX="3.75" PointY="6.625" IsExpanded="true" />
+      <Diagram DiagramId="67f8758180d4403ba4cc86e102c680fd" Name="Diagram1">
+        <EntityTypeShape EntityType="CuratorHelperModel.AppointedTeacher" Width="1.5" PointX="5.25" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.CourseWork" Width="1.5" PointX="8.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Credit" Width="1.5" PointX="8.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.DemoExam" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.DemoExamType" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Department" Width="1.5" PointX="12" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Discipline" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.DisciplineIndex" Width="1.5" PointX="3.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="CuratorHelperModel.Gender" Width="1.5" PointX="0.75" PointY="18.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.GraduateWork" Width="1.5" PointX="8.25" PointY="22.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.GraduateWorkType" Width="1.5" PointX="6" PointY="28.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Group" Width="1.5" PointX="14.25" PointY="18.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Object" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Omission" Width="1.5" PointX="11.25" PointY="17.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.OmissionType" Width="1.5" PointX="9" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Order" Width="1.5" PointX="11.25" PointY="14.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.OrderType" Width="1.5" PointX="9" PointY="10.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.PenAndInc" Width="1.5" PointX="13.5" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.PenAndIncType" Width="1.5" PointX="11.25" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Practice" Width="1.5" PointX="11.25" PointY="22.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.PracticeIndex" Width="1.5" PointX="6.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.GraduateWork" Width="1.5" PointX="8.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.GraduateWorkType" Width="1.5" PointX="6" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Group" Width="1.5" PointX="14.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Object" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Omission" Width="1.5" PointX="11.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.OmissionType" Width="1.5" PointX="9" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Order" Width="1.5" PointX="11.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.OrderType" Width="1.5" PointX="9" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.PenAndInc" Width="1.5" PointX="13.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.PenAndIncType" Width="1.5" PointX="11.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Practice" Width="1.5" PointX="11.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.PracticeIndex" Width="1.5" PointX="6.75" PointY="33.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CuratorHelperModel.PracticeName" Width="1.5" PointX="9" PointY="33.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Qualification" Width="1.5" PointX="6" PointY="31" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Role" Width="1.5" PointX="3.75" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Specialization" Width="1.5" PointX="12" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Qualification" Width="1.5" PointX="6" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Role" Width="1.5" PointX="3.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Specialization" Width="1.5" PointX="12" PointY="26.375" IsExpanded="true" />
         <EntityTypeShape EntityType="CuratorHelperModel.Student" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
         <EntityTypeShape EntityType="CuratorHelperModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.Teacher" Width="1.5" PointX="3" PointY="25.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.TeacherObjectTaught" Width="1.5" PointX="5.25" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.Teacher" Width="1.5" PointX="3" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.TeacherObjectTaught" Width="1.5" PointX="5.25" PointY="22.375" IsExpanded="true" />
         <EntityTypeShape EntityType="CuratorHelperModel.User" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuratorHelperModel.WorkProgram" Width="1.5" PointX="9.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuratorHelperModel.WorkProgram" Width="1.5" PointX="9.75" PointY="26.75" IsExpanded="true" />
         <AssociationConnector Association="CuratorHelperModel.FK_AppointedTeachers_Group" ManuallyRouted="false" />
         <AssociationConnector Association="CuratorHelperModel.FK_AppointedTeachers_Teacher" ManuallyRouted="false" />
         <AssociationConnector Association="CuratorHelperModel.FK_CourseWork_Discipline" ManuallyRouted="false" />

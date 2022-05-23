@@ -61,11 +61,65 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Добавить.
+        /// </summary>
+        public static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Успешно добавлено!.
+        /// </summary>
+        public static string AddCongrats {
+            get {
+                return ResourceManager.GetString("AddCongrats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить группу.
+        /// </summary>
+        public static string AddGroup {
+            get {
+                return ResourceManager.GetString("AddGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить преподавателя.
+        /// </summary>
+        public static string AddTeacher {
+            get {
+                return ResourceManager.GetString("AddTeacher", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Авторизация.
         /// </summary>
         public static string Authorization {
             get {
                 return ResourceManager.GetString("Authorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Отмена.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Куратор.
+        /// </summary>
+        public static string Curator {
+            get {
+                return ResourceManager.GetString("Curator", resourceCulture);
             }
         }
         
@@ -79,6 +133,15 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Текущий куратор.
+        /// </summary>
+        public static string CurCurator {
+            get {
+                return ResourceManager.GetString("CurCurator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Соединение с БД не установлено. Проверьте наличие БД в MSSQL, а также строку подключения.
         /// </summary>
         public static string DatabaseError {
@@ -88,11 +151,146 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Удалить.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Демо-экзамены.
+        /// </summary>
+        public static string DemoExams {
+            get {
+                return ResourceManager.GetString("DemoExams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Отделение.
+        /// </summary>
+        public static string Department {
+            get {
+                return ResourceManager.GetString("Department", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить прикрепленных преподавателей.
+        /// </summary>
+        public static string EditAppointedTeachers {
+            get {
+                return ResourceManager.GetString("EditAppointedTeachers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Успешно изменено.
+        /// </summary>
+        public static string EditCongrats {
+            get {
+                return ResourceManager.GetString("EditCongrats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить текущего куратора группы.
+        /// </summary>
+        public static string EditCurCurator {
+            get {
+                return ResourceManager.GetString("EditCurCurator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить предметы.
+        /// </summary>
+        public static string EditObjects {
+            get {
+                return ResourceManager.GetString("EditObjects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить преподаваемые предметы.
+        /// </summary>
+        public static string EditTeacherObjects {
+            get {
+                return ResourceManager.GetString("EditTeacherObjects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Войти.
         /// </summary>
         public static string Enter {
             get {
                 return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выход.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Имя.
+        /// </summary>
+        public static string Firstname {
+            get {
+                return ResourceManager.GetString("Firstname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Пол.
+        /// </summary>
+        public static string Gender {
+            get {
+                return ResourceManager.GetString("Gender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Такая группа уже существует.
+        /// </summary>
+        public static string GroupExists {
+            get {
+                return ResourceManager.GetString("GroupExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Название группы.
+        /// </summary>
+        public static string GroupName {
+            get {
+                return ResourceManager.GetString("GroupName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Группы.
+        /// </summary>
+        public static string Groups {
+            get {
+                return ResourceManager.GetString("Groups", resourceCulture);
             }
         }
         
@@ -124,11 +322,74 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Оценки.
+        /// </summary>
+        public static string Marks {
+            get {
+                return ResourceManager.GetString("Marks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Отчество.
+        /// </summary>
+        public static string Middlename {
+            get {
+                return ResourceManager.GetString("Middlename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Мои группы.
+        /// </summary>
+        public static string MyGroups {
+            get {
+                return ResourceManager.GetString("MyGroups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Вам необходимо заполнить все обязательные поля.
         /// </summary>
         public static string NeedToFillRequired {
             get {
                 return ResourceManager.GetString("NeedToFillRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали предметы на удаление.
+        /// </summary>
+        public static string ObjectCountZero {
+            get {
+                return ResourceManager.GetString("ObjectCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Предметы и дисциплины.
+        /// </summary>
+        public static string ObjectsAndDisciplines {
+            get {
+                return ResourceManager.GetString("ObjectsAndDisciplines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Пропуски.
+        /// </summary>
+        public static string Omissions {
+            get {
+                return ResourceManager.GetString("Omissions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Приказы.
+        /// </summary>
+        public static string Orders {
+            get {
+                return ResourceManager.GetString("Orders", resourceCulture);
             }
         }
         
@@ -142,11 +403,164 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Смена/Удаление фото.
+        /// </summary>
+        public static string PhotoEdit {
+            get {
+                return ResourceManager.GetString("PhotoEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Открыть окно смены/удаления фото.
+        /// </summary>
+        public static string PhotoEditOpen {
+            get {
+                return ResourceManager.GetString("PhotoEditOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Прикрепить.
+        /// </summary>
+        public static string Pin {
+            get {
+                return ResourceManager.GetString("Pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Практики.
+        /// </summary>
+        public static string Practics {
+            get {
+                return ResourceManager.GetString("Practics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Обязательно для заполнения.
         /// </summary>
         public static string RequiredFillIn {
             get {
                 return ResourceManager.GetString("RequiredFillIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Сохранить.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Успешно сохранено!.
+        /// </summary>
+        public static string SaveCongrats {
+            get {
+                return ResourceManager.GetString("SaveCongrats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Секретарь.
+        /// </summary>
+        public static string Secretary {
+            get {
+                return ResourceManager.GetString("Secretary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Специальность.
+        /// </summary>
+        public static string Specialization {
+            get {
+                return ResourceManager.GetString("Specialization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Студенты.
+        /// </summary>
+        public static string Students {
+            get {
+                return ResourceManager.GetString("Students", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Фамилия.
+        /// </summary>
+        public static string Surname {
+            get {
+                return ResourceManager.GetString("Surname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Преподаватель уже прикреплен.
+        /// </summary>
+        public static string TeacherAlreadyPined {
+            get {
+                return ResourceManager.GetString("TeacherAlreadyPined", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Преподаватель уже преподает данный предмет.
+        /// </summary>
+        public static string TeacherAlreadyTaught {
+            get {
+                return ResourceManager.GetString("TeacherAlreadyTaught", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Преподаватель уже существует.
+        /// </summary>
+        public static string TeacherExists {
+            get {
+                return ResourceManager.GetString("TeacherExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Преподаватели.
+        /// </summary>
+        public static string Teachers {
+            get {
+                return ResourceManager.GetString("Teachers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали преподавателей на открепление.
+        /// </summary>
+        public static string TeachersCountZero {
+            get {
+                return ResourceManager.GetString("TeachersCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to У данного куратора уже имеются 2 группы, хотите продолжить?.
+        /// </summary>
+        public static string TooMuchGroups {
+            get {
+                return ResourceManager.GetString("TooMuchGroups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Открепить.
+        /// </summary>
+        public static string Unpin {
+            get {
+                return ResourceManager.GetString("Unpin", resourceCulture);
             }
         }
     }

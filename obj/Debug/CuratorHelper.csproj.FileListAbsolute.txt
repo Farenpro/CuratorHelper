@@ -35,3 +35,17 @@ D:\MyWorks\Работа 2\Новый проект\CuratorHelper\bin\Debug\Micros
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\bin\Debug\Microsoft.Xaml.Behaviors.xml
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\MainPage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\MainPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\TeachersPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\TeachersPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddTeacherPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddTeacherPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\TeacherEditPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\TeacherEditPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\GroupsPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\GroupsPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddGroupPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddGroupPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AppointedTeachersEditPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\CuratorEditPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AppointedTeachersEditPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\CuratorEditPage.baml

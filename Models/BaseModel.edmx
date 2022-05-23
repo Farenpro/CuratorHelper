@@ -242,7 +242,6 @@
           <Property Name="Birthdate" Type="date" />
           <Property Name="GenderID" Type="int" />
           <Property Name="BirthPlace" Type="nvarchar" MaxLength="100" />
-          <Property Name="Photo" Type="nvarchar" MaxLength="50" />
           <Property Name="CompletedClassesID" Type="int" />
           <Property Name="SchoolGraduateDate" Type="date" />
           <Property Name="SchoolName" Type="nvarchar" MaxLength="100" />
@@ -268,7 +267,6 @@
           <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
-          <Property Name="Photo" Type="nvarchar" MaxLength="30" />
           <Property Name="GenderID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="TeacherObjectTaught">
@@ -289,7 +287,6 @@
           <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
           <Property Name="Login" Type="nvarchar" MaxLength="40" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="40" Nullable="false" />
-          <Property Name="Photo" Type="nvarchar" MaxLength="30" />
           <Property Name="RoleID" Type="int" Nullable="false" />
           <Property Name="GenderID" Type="int" Nullable="false" />
         </EntityType>
@@ -1185,7 +1182,6 @@
           <Property Name="Birthdate" Type="DateTime" Precision="0" />
           <Property Name="GenderID" Type="Int32" />
           <Property Name="BirthPlace" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CompletedClassesID" Type="Int32" />
           <Property Name="SchoolGraduateDate" Type="DateTime" Precision="0" />
           <Property Name="SchoolName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -1222,7 +1218,6 @@
           <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Photo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="GenderID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="AppointedTeachers" Relationship="Self.FK_AppointedTeachers_Teacher" FromRole="Teacher" ToRole="AppointedTeachers" />
           <NavigationProperty Name="Gender" Relationship="Self.FK_Teacher_Gender" FromRole="Teacher" ToRole="Gender" />
@@ -1248,7 +1243,6 @@
           <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Login" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Photo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="RoleID" Type="Int32" Nullable="false" />
           <Property Name="GenderID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Gender" Relationship="Self.FK_User_Gender" FromRole="User" ToRole="Gender" />
@@ -2123,7 +2117,6 @@
                 <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
                 <ScalarProperty Name="GenderID" ColumnName="GenderID" />
                 <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
-                <ScalarProperty Name="Photo" ColumnName="Photo" />
                 <ScalarProperty Name="CompletedClassesID" ColumnName="CompletedClassesID" />
                 <ScalarProperty Name="SchoolGraduateDate" ColumnName="SchoolGraduateDate" />
                 <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
@@ -2151,7 +2144,6 @@
                 <ScalarProperty Name="Surname" ColumnName="Surname" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Middlename" ColumnName="Middlename" />
-                <ScalarProperty Name="Photo" ColumnName="Photo" />
                 <ScalarProperty Name="GenderID" ColumnName="GenderID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -2174,7 +2166,6 @@
                 <ScalarProperty Name="Middlename" ColumnName="Middlename" />
                 <ScalarProperty Name="Login" ColumnName="Login" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Photo" ColumnName="Photo" />
                 <ScalarProperty Name="RoleID" ColumnName="RoleID" />
                 <ScalarProperty Name="GenderID" ColumnName="GenderID" />
               </MappingFragment>

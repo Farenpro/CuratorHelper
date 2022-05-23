@@ -262,7 +262,6 @@
           <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
           <ScalarProperty Name="GenderID" ColumnName="GenderID" />
           <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
-          <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="CompletedClassesID" ColumnName="CompletedClassesID" />
           <ScalarProperty Name="SchoolGraduateDate" ColumnName="SchoolGraduateDate" />
           <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
@@ -290,7 +289,6 @@
           <ScalarProperty Name="Surname" ColumnName="Surname" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Middlename" ColumnName="Middlename" />
-          <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="GenderID" ColumnName="GenderID" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -313,7 +311,6 @@
           <ScalarProperty Name="Middlename" ColumnName="Middlename" />
           <ScalarProperty Name="Login" ColumnName="Login" />
           <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
           <ScalarProperty Name="GenderID" ColumnName="GenderID" />
         </MappingFragment>
