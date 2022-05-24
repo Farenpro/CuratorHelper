@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Button x:Name="BtnAddGroup" Margin="5" Content="{x:Static res:Resources.AddGroup}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddGroup_Click"/>
         <DataGrid x:Name="DGGroups" Width="auto" Grid.Row="1" Background="White" Foreground="Blue" CanUserDeleteRows="False" HeadersVisibility="Column" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single">
@@ -43,5 +44,6 @@
                 </Style>
             </DataGrid.CellStyle>
         </DataGrid>
+        <Button x:Name="BtnDeleteGroup" Grid.Row="2" Width="auto" Margin="5" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteGroup_Click"/>
     </Grid>
 </Page>

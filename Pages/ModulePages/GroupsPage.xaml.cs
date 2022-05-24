@@ -1,4 +1,5 @@
 ﻿using CuratorHelper.Classes;
+using CuratorHelper.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,5 +48,24 @@ namespace CuratorHelper.Pages.ModulePages
         }
 
         private void FillDGGroups() { DGGroups.ItemsSource = App.Database.Groups.ToList(); }
+
+        private void BtnDeleteGroup_Click(object sender, RoutedEventArgs e)
+        {
+            if (DGGroups.SelectedItem != null)
+            {
+                if (MessageBoxResult.OK == App.Messages.ShowQuestion(Properties.Resources.AreYouSureDelete))
+                {
+                    try
+                    {
+                        App.Database.Groups.Remove(DGGroups.SelectedItem as Group);
+                        App.DBRefresh();
+                        FillDGGroups();
+                    }
+                    catch (InvalidOperationException) { App.Messages.ShowError(Properties.Resources.HaveConnectionsError); }
+                }
+            }
+            else
+                App.Messages.ShowError(Properties.Resources.GroupsCountZero);
+        }
     }
 }

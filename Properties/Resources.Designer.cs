@@ -88,11 +88,29 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Добавить студента.
+        /// </summary>
+        public static string AddStudent {
+            get {
+                return ResourceManager.GetString("AddStudent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Добавить преподавателя.
         /// </summary>
         public static string AddTeacher {
             get {
                 return ResourceManager.GetString("AddTeacher", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы уверены, что хотите удалить?.
+        /// </summary>
+        public static string AreYouSureDelete {
+            get {
+                return ResourceManager.GetString("AreYouSureDelete", resourceCulture);
             }
         }
         
@@ -259,6 +277,15 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Сформировать.
+        /// </summary>
+        public static string Form {
+            get {
+                return ResourceManager.GetString("Form", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Пол.
         /// </summary>
         public static string Gender {
@@ -291,6 +318,24 @@ namespace CuratorHelper.Properties {
         public static string Groups {
             get {
                 return ResourceManager.GetString("Groups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали группу.
+        /// </summary>
+        public static string GroupsCountZero {
+            get {
+                return ResourceManager.GetString("GroupsCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Удаление невозможно, проверьте наличие любых связей.
+        /// </summary>
+        public static string HaveConnectionsError {
+            get {
+                return ResourceManager.GetString("HaveConnectionsError", resourceCulture);
             }
         }
         
@@ -484,6 +529,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали студента.
+        /// </summary>
+        public static string StudentCountZero {
+            get {
+                return ResourceManager.GetString("StudentCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Такой студент уже существует.
+        /// </summary>
+        public static string StudentExists {
+            get {
+                return ResourceManager.GetString("StudentExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Студенты.
         /// </summary>
         public static string Students {
@@ -516,6 +579,15 @@ namespace CuratorHelper.Properties {
         public static string TeacherAlreadyTaught {
             get {
                 return ResourceManager.GetString("TeacherAlreadyTaught", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали преподавателя.
+        /// </summary>
+        public static string TeacherCountZero {
+            get {
+                return ResourceManager.GetString("TeacherCountZero", resourceCulture);
             }
         }
         

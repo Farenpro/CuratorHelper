@@ -8,7 +8,8 @@
     <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Button x:Name="BtnAddTeacher" Margin="5" Content="{x:Static res:Resources.AddTeacher}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddTeacher_Click"/>
         <DataGrid x:Name="DGTeachers" Grid.Row="1" Background="White" Foreground="Blue" CanUserDeleteRows="False" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow">
@@ -32,6 +33,6 @@
                     </Style.Triggers>
                 </Style>
             </DataGrid.CellStyle>
-        </DataGrid>
+        </DataGrid><Button x:Name="BtnDeleteTeacher" Grid.Row="2" Width="auto" Margin="5" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteTeacher_Click"/>
     </Grid>
 </Page>

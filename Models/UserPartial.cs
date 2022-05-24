@@ -2,8 +2,17 @@
 {
     public partial class User
     {
-        public string FI { get { return $"{Surname} {Name}"; } }
-        public string FIO { get { return $"{Surname} {Name} {Middlename}"; } }
-        public string RoleName { get { return Role.Name; } }
+        public string FI => $"{Surname} {Name}";
+        public string FIO
+        {
+            get
+            {
+                if (Middlename != null)
+                    return $"{Surname} {Name} {Middlename}";
+                else
+                    return $"{Surname} {Name}";
+            }
+        }
+        public string RoleName => Role.Name;
     }
 }

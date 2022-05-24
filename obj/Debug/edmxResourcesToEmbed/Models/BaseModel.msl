@@ -254,8 +254,8 @@
       <EntityTypeMapping TypeName="CuratorHelperModel.Student">
         <MappingFragment StoreEntitySet="Student">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
           <ScalarProperty Name="Firstname" ColumnName="Firstname" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Middlename" ColumnName="Middlename" />
           <ScalarProperty Name="GroupID" ColumnName="GroupID" />
           <ScalarProperty Name="SpecializationCode" ColumnName="SpecializationCode" />

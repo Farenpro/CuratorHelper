@@ -1,4 +1,5 @@
 ﻿using CuratorHelper.Classes;
+using CuratorHelper.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,25 @@ namespace CuratorHelper.Pages.ModulePages
         {
             App.CurTeacher = App.Database.Teachers.Where(p => p.ID.ToString() == DGTeachers.SelectedValue.ToString()).SingleOrDefault();
             SubFunctions.ShowEditWindow(2);
+        }
+
+        private void BtnDeleteTeacher_Click(object sender, RoutedEventArgs e)
+        {
+            if (DGTeachers.SelectedItem != null)
+            {
+                if (MessageBoxResult.OK == App.Messages.ShowQuestion(Properties.Resources.AreYouSureDelete))
+                {
+                    try
+                    {
+                        App.Database.Teachers.Remove(DGTeachers.SelectedItem as Teacher);
+                        App.DBRefresh();
+                        FillDGTeachers();
+                    }
+                    catch (InvalidOperationException) { App.Messages.ShowError(Properties.Resources.HaveConnectionsError); }
+                }
+            }
+            else
+                App.Messages.ShowError(Properties.Resources.TeacherCountZero);
         }
     }
 }

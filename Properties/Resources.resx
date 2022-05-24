@@ -126,8 +126,14 @@
   <data name="AddGroup" xml:space="preserve">
     <value>Добавить группу</value>
   </data>
+  <data name="AddStudent" xml:space="preserve">
+    <value>Добавить студента</value>
+  </data>
   <data name="AddTeacher" xml:space="preserve">
     <value>Добавить преподавателя</value>
+  </data>
+  <data name="AreYouSureDelete" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить?</value>
   </data>
   <data name="Authorization" xml:space="preserve">
     <value>Авторизация</value>
@@ -183,6 +189,9 @@
   <data name="Firstname" xml:space="preserve">
     <value>Имя</value>
   </data>
+  <data name="Form" xml:space="preserve">
+    <value>Сформировать</value>
+  </data>
   <data name="Gender" xml:space="preserve">
     <value>Пол</value>
   </data>
@@ -194,6 +203,12 @@
   </data>
   <data name="Groups" xml:space="preserve">
     <value>Группы</value>
+  </data>
+  <data name="GroupsCountZero" xml:space="preserve">
+    <value>Вы не выбрали группу</value>
+  </data>
+  <data name="HaveConnectionsError" xml:space="preserve">
+    <value>Удаление невозможно, проверьте наличие любых связей</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Логин</value>
@@ -258,6 +273,12 @@
   <data name="Specialization" xml:space="preserve">
     <value>Специальность</value>
   </data>
+  <data name="StudentCountZero" xml:space="preserve">
+    <value>Вы не выбрали студента</value>
+  </data>
+  <data name="StudentExists" xml:space="preserve">
+    <value>Такой студент уже существует</value>
+  </data>
   <data name="Students" xml:space="preserve">
     <value>Студенты</value>
   </data>
@@ -269,6 +290,9 @@
   </data>
   <data name="TeacherAlreadyTaught" xml:space="preserve">
     <value>Преподаватель уже преподает данный предмет</value>
+  </data>
+  <data name="TeacherCountZero" xml:space="preserve">
+    <value>Вы не выбрали преподавателя</value>
   </data>
   <data name="TeacherExists" xml:space="preserve">
     <value>Преподаватель уже существует</value>

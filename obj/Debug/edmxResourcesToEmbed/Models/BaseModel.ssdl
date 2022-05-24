@@ -229,9 +229,9 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="Firstname" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
-    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" />
     <Property Name="GroupID" Type="int" Nullable="false" />
     <Property Name="SpecializationCode" Type="nvarchar" MaxLength="15" Nullable="false" />
     <Property Name="Birthdate" Type="date" />
@@ -261,7 +261,7 @@
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
-    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" />
     <Property Name="GenderID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="TeacherObjectTaught">
@@ -279,9 +279,9 @@
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
-    <Property Name="Middlename" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="60" />
     <Property Name="Login" Type="nvarchar" MaxLength="40" Nullable="false" />
-    <Property Name="Password" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="40" />
     <Property Name="RoleID" Type="int" Nullable="false" />
     <Property Name="GenderID" Type="int" Nullable="false" />
   </EntityType>

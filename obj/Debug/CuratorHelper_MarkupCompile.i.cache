@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\App.xaml
-11-720613045
+13-390568378
 21219829441
-57853869979
+61-47935088
 221703663848
-Pages\AuthorizationPage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
+Pages\AuthorizationPage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddStudentPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\StudentPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
 
-True
+False
 

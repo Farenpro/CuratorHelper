@@ -2,6 +2,6 @@
 {
     public partial class TeacherObjectTaught
     {
-        public string ObjectName { get { return Object.Name; } }
+        public string ObjectName => Object.Name;
     }
 }

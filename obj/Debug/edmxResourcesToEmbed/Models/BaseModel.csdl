@@ -279,9 +279,9 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" />
-    <Property Name="Firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Firstname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="GroupID" Type="Int32" Nullable="false" />
     <Property Name="SpecializationCode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Birthdate" Type="DateTime" Precision="0" />
@@ -322,7 +322,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="GenderID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="AppointedTeachers" Relationship="Self.FK_AppointedTeachers_Teacher" FromRole="Teacher" ToRole="AppointedTeachers" />
     <NavigationProperty Name="Gender" Relationship="Self.FK_Teacher_Gender" FromRole="Teacher" ToRole="Gender" />
@@ -345,9 +345,9 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Middlename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="Login" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
     <Property Name="RoleID" Type="Int32" Nullable="false" />
     <Property Name="GenderID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Gender" Relationship="Self.FK_User_Gender" FromRole="User" ToRole="Gender" />

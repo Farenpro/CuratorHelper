@@ -36,10 +36,7 @@ namespace CuratorHelper.Pages
 
         private void BtnGroups_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new GroupsPage()); }
 
-        private void BtnStudents_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void BtnStudents_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new StudentPage()); }
 
         private void BtnOrders_Click(object sender, RoutedEventArgs e)
         {

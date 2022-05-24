@@ -24,7 +24,8 @@ namespace CuratorHelper.Pages.EditPages
     {
         public string Surname { get; set; }
         public string Firstname { get; set; }
-        public string Middlename { get; set; }
+        #nullable enable
+        public string? Middlename { get; set; }
         public Gender Gender { get; set; }
         public EditInfoWindow Window;
         public AddTeacherPage()
@@ -40,9 +41,9 @@ namespace CuratorHelper.Pages.EditPages
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (Surname != "" && Firstname != "" && Middlename != "" && Gender != null)
+            if (Surname != "" && Firstname != "" && Gender != null)
             {
-                if (App.Database.Teachers.Where(p => p.Surname == Surname && p.Name ==  Firstname && p.Middlename == Middlename && p.GenderID == Gender.ID).Count() <= 0)
+                if (App.Database.Teachers.Where(p => p.Surname == Surname && p.Name ==  Firstname && p.GenderID == Gender.ID).Count() <= 0)
                 {
                     int id = 1;
                     if (App.Database.Teachers.Count() > 0)

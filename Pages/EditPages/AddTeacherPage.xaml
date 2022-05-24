@@ -26,7 +26,7 @@
         <TextBox x:Name="TBoxFirstname" Grid.Row="4" Margin="10,0,0,20" HorizontalAlignment="Left" MinWidth="300" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Text="{Binding Firstname, UpdateSourceTrigger=PropertyChanged}" MaxLength="30"
                  BorderBrush="Black" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
         <Label Grid.Row="5" Content="{x:Static res:Resources.Middlename}" Style="{StaticResource LDescription}"/>
-        <TextBox x:Name="TBoxMiddlename" Grid.Row="6" Margin="10,0,0,20" HorizontalAlignment="Left" MinWidth="300" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Text="{Binding Middlename, UpdateSourceTrigger=PropertyChanged}" MaxLength="60"
+        <TextBox x:Name="TBoxMiddlename" Grid.Row="6" Margin="10,0,0,20" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Middlename, UpdateSourceTrigger=PropertyChanged}" MaxLength="60"
                  BorderBrush="Black" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
         <Label Grid.Row="7" Content="{x:Static res:Resources.Gender}" Style="{StaticResource LDescription}"/>
         <ComboBox x:Name="CBoxGender" Grid.Row="8" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding Gender, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
