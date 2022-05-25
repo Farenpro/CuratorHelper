@@ -123,8 +123,14 @@
   <data name="AddCongrats" xml:space="preserve">
     <value>Успешно добавлено!</value>
   </data>
+  <data name="AddDiscipline" xml:space="preserve">
+    <value>Добавить дисциплину</value>
+  </data>
   <data name="AddGroup" xml:space="preserve">
     <value>Добавить группу</value>
+  </data>
+  <data name="AddObject" xml:space="preserve">
+    <value>Добавить предмет</value>
   </data>
   <data name="AddStudent" xml:space="preserve">
     <value>Добавить студента</value>
@@ -140,6 +146,12 @@
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
+  </data>
+  <data name="Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="CreateOrder" xml:space="preserve">
+    <value>Создать приказ</value>
   </data>
   <data name="Curator" xml:space="preserve">
     <value>Куратор</value>
@@ -161,6 +173,12 @@
   </data>
   <data name="Department" xml:space="preserve">
     <value>Отделение</value>
+  </data>
+  <data name="DisciplineExists" xml:space="preserve">
+    <value>Такая дисциплина уже существует</value>
+  </data>
+  <data name="DisciplinesCountZero" xml:space="preserve">
+    <value>Вы не выбрали дисциплины</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Изменить</value>
@@ -210,6 +228,9 @@
   <data name="HaveConnectionsError" xml:space="preserve">
     <value>Удаление невозможно, проверьте наличие любых связей</value>
   </data>
+  <data name="Index" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Логин</value>
   </data>
@@ -228,11 +249,17 @@
   <data name="MyGroups" xml:space="preserve">
     <value>Мои группы</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
   <data name="NeedToFillRequired" xml:space="preserve">
     <value>Вам необходимо заполнить все обязательные поля</value>
   </data>
   <data name="ObjectCountZero" xml:space="preserve">
     <value>Вы не выбрали предметы на удаление</value>
+  </data>
+  <data name="ObjectExists" xml:space="preserve">
+    <value>Предмет с таким названием уже существует</value>
   </data>
   <data name="ObjectsAndDisciplines" xml:space="preserve">
     <value>Предметы и дисциплины</value>
@@ -242,6 +269,12 @@
   </data>
   <data name="Orders" xml:space="preserve">
     <value>Приказы</value>
+  </data>
+  <data name="OrdersCountZero" xml:space="preserve">
+    <value>Вы не выбрали приказы</value>
+  </data>
+  <data name="OrderType" xml:space="preserve">
+    <value>Тип приказа</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
@@ -272,6 +305,9 @@
   </data>
   <data name="Specialization" xml:space="preserve">
     <value>Специальность</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Студент</value>
   </data>
   <data name="StudentCountZero" xml:space="preserve">
     <value>Вы не выбрали студента</value>

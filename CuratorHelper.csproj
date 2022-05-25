@@ -127,6 +127,7 @@
     <Compile Include="Models\DisciplineIndex.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DisciplinePartial.cs" />
     <Compile Include="Models\Gender.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -152,6 +153,7 @@
     <Compile Include="Models\Order.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OrderPartial.cs" />
     <Compile Include="Models\OrderType.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -205,8 +207,17 @@
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\AddDisciplinePage.xaml.cs">
+      <DependentUpon>AddDisciplinePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\AddGroupPage.xaml.cs">
       <DependentUpon>AddGroupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddObjectPage.xaml.cs">
+      <DependentUpon>AddObjectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\CreateOrderPage.xaml.cs">
+      <DependentUpon>CreateOrderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditPages\AddStudentPage.xaml.cs">
       <DependentUpon>AddStudentPage.xaml</DependentUpon>
@@ -226,8 +237,14 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ModulePages\DisciplineObjectsPage.xaml.cs">
+      <DependentUpon>DisciplineObjectsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ModulePages\GroupsPage.xaml.cs">
       <DependentUpon>GroupsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\OrdersPage.xaml.cs">
+      <DependentUpon>OrdersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\StudentPage.xaml.cs">
       <DependentUpon>StudentPage.xaml</DependentUpon>
@@ -281,7 +298,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\AddDisciplinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditPages\AddGroupPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddObjectPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\CreateOrderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -309,7 +338,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ModulePages\DisciplineObjectsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ModulePages\GroupsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\OrdersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

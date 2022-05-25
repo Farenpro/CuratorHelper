@@ -38,15 +38,9 @@ namespace CuratorHelper.Pages
 
         private void BtnStudents_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new StudentPage()); }
 
-        private void BtnOrders_Click(object sender, RoutedEventArgs e)
-        {
+        private void BtnOrders_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new OrdersPage()); }
 
-        }
-
-        private void BtnObjAndDisc_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void BtnObjAndDisc_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new DisciplineObjectsPage()); }
 
         private void BtnPractics_Click(object sender, RoutedEventArgs e)
         {

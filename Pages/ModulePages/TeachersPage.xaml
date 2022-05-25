@@ -3,20 +3,20 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:res="clr-namespace:CuratorHelper.Properties"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      MinHeight="390" MinWidth="500" TextElement.FontSize="16"
+      MinHeight="390" TextElement.FontSize="16"
       Title="{x:Static res:Resources.Teachers}" FontFamily="{StaticResource FontMain}">
-    <Grid Margin="5">
+    <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Button x:Name="BtnAddTeacher" Margin="5" Content="{x:Static res:Resources.AddTeacher}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddTeacher_Click"/>
-        <DataGrid x:Name="DGTeachers" Grid.Row="1" Background="White" Foreground="Blue" CanUserDeleteRows="False" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow">
+        <DataGrid x:Name="DGTeachers" Grid.Row="1" Background="White" Width="auto" Foreground="Blue" CanUserDeleteRows="False" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="auto" Header="ФИО" Binding="{Binding FIO}"/>
                 <DataGridTextColumn Width="auto" Header="Пол" Binding="{Binding GenderName}"/>
-                <DataGridTemplateColumn Width="*" Header="Изменить преподаваемые предметы">
+                <DataGridTemplateColumn Width="auto" Header="Изменить преподаваемые предметы">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button x:Name="BtnEditTeachObjects" Margin="5" Content="{x:Static res:Resources.Edit}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnEditTeachObjects_Click"/>
@@ -33,6 +33,7 @@
                     </Style.Triggers>
                 </Style>
             </DataGrid.CellStyle>
-        </DataGrid><Button x:Name="BtnDeleteTeacher" Grid.Row="2" Width="auto" Margin="5" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteTeacher_Click"/>
+        </DataGrid>
+        <Button x:Name="BtnDeleteTeacher" Grid.Row="2" Width="auto" Margin="5" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteTeacher_Click"/>
     </Grid>
 </Page>

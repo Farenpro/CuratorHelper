@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\App.xaml
-13-390568378
+18-47663849
 21219829441
-60794424279
+672092379490
 221703663848
-Pages\AuthorizationPage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddStudentPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\StudentPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
+Pages\AuthorizationPage.xaml;Pages\EditPages\AddDisciplinePage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddObjectPage.xaml;Pages\EditPages\CreateOrderPage.xaml;Pages\EditPages\AddStudentPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\DisciplineObjectsPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\OrdersPage.xaml;Pages\ModulePages\StudentPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
 
 False
 

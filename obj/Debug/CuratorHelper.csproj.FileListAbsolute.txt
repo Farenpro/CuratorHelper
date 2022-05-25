@@ -53,3 +53,13 @@ D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\StudentPage.baml
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentPage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\OrdersPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\OrdersPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\CreateOrderPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\CreateOrderPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\DisciplineObjectsPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\DisciplineObjectsPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDisciplinePage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDisciplinePage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddObjectPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddObjectPage.baml

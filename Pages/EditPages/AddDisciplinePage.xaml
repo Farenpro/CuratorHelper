@@ -1,0 +1,36 @@
+﻿<Page x:Class="CuratorHelper.Pages.EditPages.AddDisciplinePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:res="clr-namespace:CuratorHelper.Properties"
+      Height="340" Width="400" MinWidth="400" MinHeight="340" TextElement.FontSize="16"
+      Title="{x:Static res:Resources.AddDiscipline}" FontFamily="{StaticResource FontMain}">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+            <Label Content="{x:Static res:Resources.AddDiscipline}" Style="{StaticResource LHead}"/>
+        <Label Grid.Row="1" Content="{x:Static res:Resources.Name}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxObjects" Grid.Row="2" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding Object, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+        <Button x:Name="BtnObjectAdd" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,10" Content="{materialDesign:PackIcon Kind=PencilAdd}" Click="BtnObjectAdd_Click" ToolTip="{x:Static res:Resources.AddObject}" Foreground="White" 
+                    Background="{DynamicResource SecondaryHueMidBrush}" BorderThickness="0" BorderBrush="#076194" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}"/>
+        <Label Grid.Row="3" Content="{x:Static res:Resources.Index}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxIndexes" Grid.Row="4" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding DisciplineIndex, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="5">
+            <Button x:Name="BtnCancel" Margin="5" Content="{x:Static res:Resources.Cancel}" Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="BtnCancel_Click"/>
+            <Button x:Name="BtnAdd" Margin="5" Content="{x:Static res:Resources.AddDiscipline}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAdd_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

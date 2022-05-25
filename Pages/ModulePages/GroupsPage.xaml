@@ -12,7 +12,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Button x:Name="BtnAddGroup" Margin="5" Content="{x:Static res:Resources.AddGroup}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddGroup_Click"/>
-        <DataGrid x:Name="DGGroups" Width="auto" Grid.Row="1" Background="White" Foreground="Blue" CanUserDeleteRows="False" HeadersVisibility="Column" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single">
+        <DataGrid x:Name="DGGroups" Width="auto" Grid.Row="1" Background="White" Foreground="Blue" CanUserDeleteRows="False" HeadersVisibility="Column" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single" BorderBrush="{DynamicResource SecondaryHueMidBrush}">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="auto" Header="Название" Binding="{Binding Name}"/>
                 <DataGridTextColumn Width="auto" Header="Специальность" Binding="{Binding SpecializationName}"/>

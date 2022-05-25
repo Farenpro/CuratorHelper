@@ -34,6 +34,15 @@ namespace CuratorHelper.Windows
                 case 6:
                     MainFrame.Navigate(new AddStudentPage());
                     break;
+                case 7:
+                    MainFrame.Navigate(new CreateOrderPage());
+                    break;
+                case 8:
+                    MainFrame.Navigate(new AddDisciplinePage());
+                    break;
+                case 9:
+                    MainFrame.Navigate(new AddObjectPage());
+                    break;
             }
         }
     }

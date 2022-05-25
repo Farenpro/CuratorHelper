@@ -37,6 +37,8 @@
                 <Button x:Name="BtnOmissions" Margin="5" Content="{x:Static res:Resources.Omissions}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOmissions_Click"/>
             </StackPanel>
         </ScrollViewer>
-        <Frame x:Name="MainPageFrame" Margin="5" Grid.Row="2" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+        <ScrollViewer Margin="10" Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <Frame x:Name="MainPageFrame" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+        </ScrollViewer>
     </Grid>
 </Page>

@@ -19,6 +19,7 @@ namespace CuratorHelper.Models
             }
         }
 
+        public string GroupAndFIO { get { return $"{GroupName} {FIO}"; } }
         public string GroupName => Group.Name;
         public string SpecializationName => $"{Specialization.Code} {Specialization.Name}";
         public string GenderName => Gender.Name;
