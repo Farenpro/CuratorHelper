@@ -1,7 +1,14 @@
 ﻿
 
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\AuthorizationPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddCourseWorkPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddDisciplinePage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddGraduateWorkPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddGroupPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddObjectPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddPracticeNamePage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddPracticsPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddQualificationPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\CreateOrderPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddStudentPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddTeacherPage.xaml;;
@@ -9,11 +16,12 @@ FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\CuratorEditPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\TeacherEditPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\MainPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\CourseWorksPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\DisciplineObjectsPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\GraduateWorksPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\GroupsPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\OrdersPage.xaml;;
+FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\PracticsPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\StudentPage.xaml;;
 FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\TeachersPage.xaml;;
-FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\ModulePages\DisciplineObjectsPage.xaml;;
-FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddDisciplinePage.xaml;;
-FD:\MyWorks\Работа 2\Новый проект\CuratorHelper\Pages\EditPages\AddObjectPage.xaml;;
 

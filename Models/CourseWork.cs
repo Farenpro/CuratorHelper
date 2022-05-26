@@ -16,10 +16,10 @@ namespace CuratorHelper.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public int Term { get; set; }
+        public byte Term { get; set; }
         public System.DateTime FinishDate { get; set; }
         public int DisciplineID { get; set; }
-        public int Mark { get; set; }
+        public byte Mark { get; set; }
         public int StudentID { get; set; }
     
         public virtual Discipline Discipline { get; set; }

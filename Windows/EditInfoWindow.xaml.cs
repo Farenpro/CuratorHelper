@@ -1,8 +1,6 @@
-﻿
+﻿using CuratorHelper.Models;
 using CuratorHelper.Pages.EditPages;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace CuratorHelper.Windows
 {
@@ -43,7 +41,28 @@ namespace CuratorHelper.Windows
                 case 9:
                     MainFrame.Navigate(new AddObjectPage());
                     break;
+                case 10:
+                    MainFrame.Navigate(new AddCourseWorkPage());
+                    break;
+                case 11:
+                    MainFrame.Navigate(new AddGraduateWorkPage());
+                    break;
+                case 12:
+                    MainFrame.Navigate(new AddQualificationPage());
+                    break;
+                case 13:
+                    MainFrame.Navigate(new AddPracticsPage());
+                    break;
+                case 14:
+                    MainFrame.Navigate(new AddPracticeNamePage());
+                    break;
             }
+        }
+
+        public EditInfoWindow(Student student)
+        {
+            InitializeComponent();
+            MainFrame.Navigate(new CreateOrderPage(student));
         }
     }
 }

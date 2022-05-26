@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\App.xaml
-18-47663849
+261634003073
 21219829441
-681250020123
+78-713946604
 221703663848
-Pages\AuthorizationPage.xaml;Pages\EditPages\AddDisciplinePage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddObjectPage.xaml;Pages\EditPages\CreateOrderPage.xaml;Pages\EditPages\AddStudentPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\DisciplineObjectsPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\OrdersPage.xaml;Pages\ModulePages\StudentPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
+Pages\AuthorizationPage.xaml;Pages\EditPages\AddCourseWorkPage.xaml;Pages\EditPages\AddDisciplinePage.xaml;Pages\EditPages\AddGraduateWorkPage.xaml;Pages\EditPages\AddGroupPage.xaml;Pages\EditPages\AddObjectPage.xaml;Pages\EditPages\AddPracticeNamePage.xaml;Pages\EditPages\AddPracticsPage.xaml;Pages\EditPages\AddQualificationPage.xaml;Pages\EditPages\CreateOrderPage.xaml;Pages\EditPages\AddStudentPage.xaml;Pages\EditPages\AddTeacherPage.xaml;Pages\EditPages\AppointedTeachersEditPage.xaml;Pages\EditPages\CuratorEditPage.xaml;Pages\EditPages\TeacherEditPage.xaml;Pages\MainPage.xaml;Pages\ModulePages\CourseWorksPage.xaml;Pages\ModulePages\DisciplineObjectsPage.xaml;Pages\ModulePages\GraduateWorksPage.xaml;Pages\ModulePages\GroupsPage.xaml;Pages\ModulePages\OrdersPage.xaml;Pages\ModulePages\PracticsPage.xaml;Pages\ModulePages\StudentPage.xaml;Pages\ModulePages\TeachersPage.xaml;Windows\EditInfoWindow.xaml;Windows\MainMenuWindow.xaml;
 
-True
+False
 

@@ -40,25 +40,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DemoExams">
-      <EntityTypeMapping TypeName="CuratorHelperModel.DemoExam">
-        <MappingFragment StoreEntitySet="DemoExam">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="DemoExamTypeID" ColumnName="DemoExamTypeID" />
-          <ScalarProperty Name="Mark" ColumnName="Mark" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="DemoExamTypes">
-      <EntityTypeMapping TypeName="CuratorHelperModel.DemoExamType">
-        <MappingFragment StoreEntitySet="DemoExamType">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Departments">
       <EntityTypeMapping TypeName="CuratorHelperModel.Department">
         <MappingFragment StoreEntitySet="Department">
@@ -201,7 +182,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="PracticeNameID" ColumnName="PracticeNameID" />
           <ScalarProperty Name="Term" ColumnName="Term" />
-          <ScalarProperty Name="DaysDuratiion" ColumnName="DaysDuratiion" />
+          <ScalarProperty Name="DaysDuration" ColumnName="DaysDuration" />
           <ScalarProperty Name="Mark" ColumnName="Mark" />
           <ScalarProperty Name="StudentID" ColumnName="StudentID" />
         </MappingFragment>

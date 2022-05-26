@@ -27,14 +27,12 @@ namespace CuratorHelper.Pages.EditPages
 #nullable enable
         public byte? Course { get; set; }
         public EditInfoWindow Window;
-        public CreateOrderPage()
+        public CreateOrderPage() { Initializing(); }
+
+        public CreateOrderPage(Student student)
         {
-            InitializeComponent();
-            Window = App.Current.Windows.OfType<EditInfoWindow>().SingleOrDefault();
-            Window.DataContext = this;
-            DataContext = this;
-            CBoxStudents.ItemsSource = App.Database.Students.ToList();
-            CBoxOrderTypes.ItemsSource = App.Database.OrderTypes.ToList();
+            Initializing();
+            CBoxStudents.SelectedItem = student;
         }
 
         private void BtnCreate_Click(object sender, RoutedEventArgs e)
@@ -59,6 +57,16 @@ namespace CuratorHelper.Pages.EditPages
             }
             else
                 App.Messages.ShowError(Properties.Resources.NeedToFillRequired);
+        }
+
+        private void Initializing()
+        {
+            InitializeComponent();
+            Window = App.Current.Windows.OfType<EditInfoWindow>().SingleOrDefault();
+            Window.DataContext = this;
+            DataContext = this;
+            CBoxStudents.ItemsSource = App.Database.Students.ToList();
+            CBoxOrderTypes.ItemsSource = App.Database.OrderTypes.ToList();
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e) { Window.Close(); }

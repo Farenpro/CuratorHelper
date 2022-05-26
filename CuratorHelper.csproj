@@ -109,13 +109,8 @@
     <Compile Include="Models\CourseWork.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CourseWorkPartial.cs" />
     <Compile Include="Models\Credit.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DemoExam.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DemoExamType.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Department.cs">
@@ -134,6 +129,7 @@
     <Compile Include="Models\GraduateWork.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GraduateWorkPartial.cs" />
     <Compile Include="Models\GraduateWorkType.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -172,6 +168,8 @@
     <Compile Include="Models\PracticeName.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PracticeNamePartial.cs" />
+    <Compile Include="Models\PracticePartial.cs" />
     <Compile Include="Models\Qualification.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -207,14 +205,29 @@
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\AddCourseWorkPage.xaml.cs">
+      <DependentUpon>AddCourseWorkPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\AddDisciplinePage.xaml.cs">
       <DependentUpon>AddDisciplinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddGraduateWorkPage.xaml.cs">
+      <DependentUpon>AddGraduateWorkPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditPages\AddGroupPage.xaml.cs">
       <DependentUpon>AddGroupPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditPages\AddObjectPage.xaml.cs">
       <DependentUpon>AddObjectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddPracticeNamePage.xaml.cs">
+      <DependentUpon>AddPracticeNamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddPracticsPage.xaml.cs">
+      <DependentUpon>AddPracticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddQualificationPage.xaml.cs">
+      <DependentUpon>AddQualificationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditPages\CreateOrderPage.xaml.cs">
       <DependentUpon>CreateOrderPage.xaml</DependentUpon>
@@ -237,14 +250,23 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ModulePages\CourseWorksPage.xaml.cs">
+      <DependentUpon>CourseWorksPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ModulePages\DisciplineObjectsPage.xaml.cs">
       <DependentUpon>DisciplineObjectsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\GraduateWorksPage.xaml.cs">
+      <DependentUpon>GraduateWorksPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\GroupsPage.xaml.cs">
       <DependentUpon>GroupsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\OrdersPage.xaml.cs">
       <DependentUpon>OrdersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\PracticsPage.xaml.cs">
+      <DependentUpon>PracticsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\StudentPage.xaml.cs">
       <DependentUpon>StudentPage.xaml</DependentUpon>
@@ -298,7 +320,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\AddCourseWorkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditPages\AddDisciplinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddGraduateWorkPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -307,6 +337,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EditPages\AddObjectPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddPracticeNamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddPracticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddQualificationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -338,7 +380,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ModulePages\CourseWorksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ModulePages\DisciplineObjectsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\GraduateWorksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -347,6 +397,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ModulePages\OrdersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\PracticsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,59 @@
+﻿<Page x:Class="CuratorHelper.Pages.EditPages.AddGraduateWorkPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:res="clr-namespace:CuratorHelper.Properties"
+      Height="430" Width="740" MinWidth="740" MinHeight="430" TextElement.FontSize="16"
+      Title="{x:Static res:Resources.AddGraduateWork}" FontFamily="{StaticResource FontMain}">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="{x:Static res:Resources.AddGraduateWork}" Style="{StaticResource LHead}"/>
+        <Label Grid.Row="1" Content="{x:Static res:Resources.Student}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxStudents" Grid.Row="2" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="GroupAndFIO"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+        <Label Grid.Row="3" Content="{x:Static res:Resources.GWKType}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxGWKType" Grid.Row="4" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding GWKType, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+        <Label Grid.Row="5" Content="{x:Static res:Resources.Mark}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxMark" Grid.Row="6" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedValue="{Binding Mark, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="3">
+            <ComboBox.ItemsSource>
+                <x:Array Type="{x:Type sys:Byte}">
+                    <sys:Byte>2</sys:Byte>
+                    <sys:Byte>3</sys:Byte>
+                    <sys:Byte>4</sys:Byte>
+                    <sys:Byte>5</sys:Byte>
+                </x:Array>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <Label Grid.Row="1" Grid.Column="1" Content="{x:Static res:Resources.Theme}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTheme" Grid.Row="2" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Text="{Binding Theme, UpdateSourceTrigger=PropertyChanged}" MaxLength="50"
+                 BorderBrush="Black" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="{x:Static res:Resources.FinishDate}" Style="{StaticResource LDescription}"/>
+        <DatePicker x:Name="DPProtectDate" Grid.Row="4" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedDate="{Binding ProtectDate, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" FirstDayOfWeek="Monday" Focusable="False"
+                     ToolTip="{x:Static res:Resources.ProtectDateToolTip}" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}"  BorderBrush="Black" materialDesign:ThemeAssist.Theme="Light" Style="{StaticResource MaterialDesignOutlinedDatePicker}"/>
+        <Label Grid.Row="5" Grid.Column="1" Content="{x:Static res:Resources.QualificationAwarded}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxQualification" Grid.Row="6" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedValue="{Binding Qualification, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}">
+        </ComboBox>
+        <Button x:Name="BtnQualificationAdd" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Left" Margin="0,0,0,10" Content="{materialDesign:PackIcon Kind=PencilAdd}" Click="BtnQualificationAdd_Click" ToolTip="{x:Static res:Resources.AddQualification}" Foreground="White" 
+                    Background="{DynamicResource SecondaryHueMidBrush}" BorderThickness="0" BorderBrush="#076194" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}"/>
+        <Button x:Name="BtnCancel" Grid.Row="7" Margin="5" Content="{x:Static res:Resources.Cancel}" Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="BtnCancel_Click"/>
+        <Button x:Name="BtnAdd" Grid.Row="7" Grid.Column="1" Margin="5" Content="{x:Static res:Resources.AddGraduateWork}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAdd_Click"/>
+    </Grid>
+</Page>

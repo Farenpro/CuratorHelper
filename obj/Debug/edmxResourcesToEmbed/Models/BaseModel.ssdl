@@ -14,10 +14,10 @@
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="Term" Type="tinyint" Nullable="false" />
     <Property Name="FinishDate" Type="date" Nullable="false" />
     <Property Name="DisciplineID" Type="int" Nullable="false" />
-    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="tinyint" Nullable="false" />
     <Property Name="StudentID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Credit">
@@ -35,23 +35,6 @@
     <Property Name="Term6Mark" Type="int" />
     <Property Name="Term7Mark" Type="int" />
     <Property Name="Term8Mark" Type="int" />
-  </EntityType>
-  <EntityType Name="DemoExam">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="DemoExamTypeID" Type="int" Nullable="false" />
-    <Property Name="Mark" Type="int" Nullable="false" />
-    <Property Name="Date" Type="date" Nullable="false" />
-    <Property Name="StudentID" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="DemoExamType">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Department">
     <Key>
@@ -90,7 +73,7 @@
     <Property Name="GraduateWorkTypeID" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="ProtectDate" Type="date" Nullable="false" />
-    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="tinyint" Nullable="false" />
     <Property Name="StudentID" Type="int" Nullable="false" />
     <Property Name="QualificationID" Type="int" Nullable="false" />
   </EntityType>
@@ -181,9 +164,9 @@
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="PracticeNameID" Type="int" Nullable="false" />
-    <Property Name="Term" Type="int" Nullable="false" />
-    <Property Name="DaysDuratiion" Type="int" Nullable="false" />
-    <Property Name="Mark" Type="int" Nullable="false" />
+    <Property Name="Term" Type="tinyint" Nullable="false" />
+    <Property Name="DaysDuration" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="tinyint" Nullable="false" />
     <Property Name="StudentID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="PracticeIndex">
@@ -360,30 +343,6 @@
         <PropertyRef Name="ID" />
       </Principal>
       <Dependent Role="Credit">
-        <PropertyRef Name="StudentID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_DemoExam_DemoExamName">
-    <End Role="DemoExamType" Type="Self.DemoExamType" Multiplicity="1" />
-    <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DemoExamType">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="DemoExam">
-        <PropertyRef Name="DemoExamTypeID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_DemoExam_Student">
-    <End Role="Student" Type="Self.Student" Multiplicity="1" />
-    <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Student">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="DemoExam">
         <PropertyRef Name="StudentID" />
       </Dependent>
     </ReferentialConstraint>
@@ -716,8 +675,6 @@
     <EntitySet Name="AppointedTeachers" EntityType="Self.AppointedTeachers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CourseWork" EntityType="Self.CourseWork" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Credit" EntityType="Self.Credit" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="DemoExam" EntityType="Self.DemoExam" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="DemoExamType" EntityType="Self.DemoExamType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DisciplineIndex" EntityType="Self.DisciplineIndex" Schema="dbo" store:Type="Tables" />
@@ -767,14 +724,6 @@
     <AssociationSet Name="FK_Credit_Student" Association="Self.FK_Credit_Student">
       <End Role="Student" EntitySet="Student" />
       <End Role="Credit" EntitySet="Credit" />
-    </AssociationSet>
-    <AssociationSet Name="FK_DemoExam_DemoExamName" Association="Self.FK_DemoExam_DemoExamName">
-      <End Role="DemoExamType" EntitySet="DemoExamType" />
-      <End Role="DemoExam" EntitySet="DemoExam" />
-    </AssociationSet>
-    <AssociationSet Name="FK_DemoExam_Student" Association="Self.FK_DemoExam_Student">
-      <End Role="Student" EntitySet="Student" />
-      <End Role="DemoExam" EntitySet="DemoExam" />
     </AssociationSet>
     <AssociationSet Name="FK_Discipline_DisciplineType" Association="Self.FK_Discipline_DisciplineType">
       <End Role="DisciplineIndex" EntitySet="DisciplineIndex" />

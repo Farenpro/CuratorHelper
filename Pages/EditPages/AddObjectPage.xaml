@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <Label Content="{x:Static res:Resources.AddObject}" Style="{StaticResource LHead}"/>
         <Label Grid.Row="1" Content="{x:Static res:Resources.Name}" Style="{StaticResource LDescription}"/>
-        <TextBox x:Name="TBoxGroupName" Grid.Row="2" Margin="10,0,0,20" HorizontalAlignment="Left" MinWidth="300" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Text="{Binding ObjectName, UpdateSourceTrigger=PropertyChanged}" MaxLength="30"
+        <TextBox x:Name="TBoxGroupName" Grid.Row="2" Margin="10,0,0,20" HorizontalAlignment="Left" MinWidth="300" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Text="{Binding ObjectName, UpdateSourceTrigger=PropertyChanged}" MaxLength="150"
                  BorderBrush="Black" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
         <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="5">
             <Button x:Name="BtnCancel" Margin="5" Content="{x:Static res:Resources.Cancel}" Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="BtnCancel_Click"/>

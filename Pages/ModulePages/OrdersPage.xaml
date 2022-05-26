@@ -20,6 +20,15 @@
                 <DataGridTextColumn Width="auto" Header="Тип приказа" Binding="{Binding OrderTypeName}"/>
                 <DataGridTextColumn Width="auto" Header="Курс" Binding="{Binding Course}"/>
             </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryHueMidBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
         </DataGrid>
         <Button x:Name="BtnDeleteOrder" Grid.Row="2" Width="auto" Margin="5" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteOrder_Click"/>
     </Grid>

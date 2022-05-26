@@ -1,5 +1,6 @@
 ﻿using CuratorHelper.Classes;
 using CuratorHelper.Models;
+using CuratorHelper.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,8 @@ namespace CuratorHelper.Pages.ModulePages
 
         private void BtnOrderForm_Click(object sender, RoutedEventArgs e)
         {
-
+            EditInfoWindow editInfoWindow = new EditInfoWindow(DGStudents.SelectedItem as Student);
+            editInfoWindow.Show();
         }
 
         private void FillDGStudents() { DGStudents.ItemsSource = App.Database.Students.ToList(); }

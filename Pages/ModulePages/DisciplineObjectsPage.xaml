@@ -17,6 +17,15 @@
                 <DataGridTextColumn Width="300" Header="Название" Binding="{Binding ObjectName}"/>
                 <DataGridTextColumn Width="auto" Header="Индекс" Binding="{Binding IndexName}"/>
             </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryHueMidBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
         </DataGrid>
         <Button x:Name="BtnDeleteDisciplines" Grid.Row="2" Width="auto" Margin="0,0,0,30" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeleteDisciplines_Click"/>
     </Grid>

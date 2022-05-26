@@ -16,9 +16,9 @@ namespace CuratorHelper.Models
     {
         public int ID { get; set; }
         public int PracticeNameID { get; set; }
-        public int Term { get; set; }
-        public int DaysDuratiion { get; set; }
-        public int Mark { get; set; }
+        public byte Term { get; set; }
+        public int DaysDuration { get; set; }
+        public byte Mark { get; set; }
         public int StudentID { get; set; }
     
         public virtual PracticeName PracticeName { get; set; }

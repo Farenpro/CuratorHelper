@@ -30,11 +30,10 @@
                 <Button x:Name="BtnStudents" Margin="5" Content="{x:Static res:Resources.Students}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnStudents_Click"/>
                 <Button x:Name="BtnOrders" Margin="5" Content="{x:Static res:Resources.Orders}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOrders_Click"/>
                 <Button x:Name="BtnObjAndDisc" Margin="5" Content="{x:Static res:Resources.ObjectsAndDisciplines}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnObjAndDisc_Click"/>
+                <Button x:Name="BtnCourseWorks" Margin="5" Content="{x:Static res:Resources.CourseWorks}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnCourseWorks_Click"/>
+                <Button x:Name="BtnGraduateWorks" Margin="5" Content="{x:Static res:Resources.GraduateWorks}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnGraduateWorks_Click"/>
                 <Button x:Name="BtnPractics" Margin="5" Content="{x:Static res:Resources.Practics}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnPractics_Click"/>
-                <Button x:Name="BtnDemoExams" Margin="5" Content="{x:Static res:Resources.DemoExams}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDemoExams_Click"/>
                 <Button x:Name="BtnMyGroups" Margin="5" Content="{x:Static res:Resources.MyGroups}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnMyGroups_Click"/>
-                <Button x:Name="BtnMarks" Margin="5" Content="{x:Static res:Resources.Marks}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnMarks_Click"/>
-                <Button x:Name="BtnOmissions" Margin="5" Content="{x:Static res:Resources.Omissions}" Visibility="Collapsed" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOmissions_Click"/>
             </StackPanel>
         </ScrollViewer>
         <ScrollViewer Margin="10" Grid.Row="2" VerticalScrollBarVisibility="Auto">

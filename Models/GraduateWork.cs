@@ -18,7 +18,7 @@ namespace CuratorHelper.Models
         public int GraduateWorkTypeID { get; set; }
         public string Name { get; set; }
         public System.DateTime ProtectDate { get; set; }
-        public int Mark { get; set; }
+        public byte Mark { get; set; }
         public int StudentID { get; set; }
         public int QualificationID { get; set; }
     

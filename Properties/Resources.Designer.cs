@@ -79,11 +79,29 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Добавить курсовую работу.
+        /// </summary>
+        public static string AddCourseWork {
+            get {
+                return ResourceManager.GetString("AddCourseWork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Добавить дисциплину.
         /// </summary>
         public static string AddDiscipline {
             get {
                 return ResourceManager.GetString("AddDiscipline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить ВКР.
+        /// </summary>
+        public static string AddGraduateWork {
+            get {
+                return ResourceManager.GetString("AddGraduateWork", resourceCulture);
             }
         }
         
@@ -102,6 +120,33 @@ namespace CuratorHelper.Properties {
         public static string AddObject {
             get {
                 return ResourceManager.GetString("AddObject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить практику.
+        /// </summary>
+        public static string AddPractice {
+            get {
+                return ResourceManager.GetString("AddPractice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить название практики.
+        /// </summary>
+        public static string AddPracticeName {
+            get {
+                return ResourceManager.GetString("AddPracticeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить квалификацию.
+        /// </summary>
+        public static string AddQualification {
+            get {
+                return ResourceManager.GetString("AddQualification", resourceCulture);
             }
         }
         
@@ -160,6 +205,33 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Проверьте наличие курсовой с похожей/иной темой по данной дисциплине и семестру.
+        /// </summary>
+        public static string CourseWorkExists {
+            get {
+                return ResourceManager.GetString("CourseWorkExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Курсовые работы.
+        /// </summary>
+        public static string CourseWorks {
+            get {
+                return ResourceManager.GetString("CourseWorks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали курсовые работы.
+        /// </summary>
+        public static string CourseWorksCountZero {
+            get {
+                return ResourceManager.GetString("CourseWorksCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Создать приказ.
         /// </summary>
         public static string CreateOrder {
@@ -205,6 +277,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Продолжительность.
+        /// </summary>
+        public static string DaysDuration {
+            get {
+                return ResourceManager.GetString("DaysDuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Проверьте правильность продолжительности практики.
+        /// </summary>
+        public static string DaysDurationError {
+            get {
+                return ResourceManager.GetString("DaysDurationError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Удалить.
         /// </summary>
         public static string Delete {
@@ -228,6 +318,15 @@ namespace CuratorHelper.Properties {
         public static string Department {
             get {
                 return ResourceManager.GetString("Department", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Дисциплина.
+        /// </summary>
+        public static string Discipline {
+            get {
+                return ResourceManager.GetString("Discipline", resourceCulture);
             }
         }
         
@@ -322,6 +421,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Дата сдачи.
+        /// </summary>
+        public static string FinishDate {
+            get {
+                return ResourceManager.GetString("FinishDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выбрать дату сдачи.
+        /// </summary>
+        public static string FinishDateToolTip {
+            get {
+                return ResourceManager.GetString("FinishDateToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Имя.
         /// </summary>
         public static string Firstname {
@@ -345,6 +462,33 @@ namespace CuratorHelper.Properties {
         public static string Gender {
             get {
                 return ResourceManager.GetString("Gender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Данный студент уже защитил ВКР.
+        /// </summary>
+        public static string GraduateWorkExists {
+            get {
+                return ResourceManager.GetString("GraduateWorkExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выпуск. квалиф. работы.
+        /// </summary>
+        public static string GraduateWorks {
+            get {
+                return ResourceManager.GetString("GraduateWorks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали ВКР.
+        /// </summary>
+        public static string GraduateWorksCountZero {
+            get {
+                return ResourceManager.GetString("GraduateWorksCountZero", resourceCulture);
             }
         }
         
@@ -381,6 +525,15 @@ namespace CuratorHelper.Properties {
         public static string GroupsCountZero {
             get {
                 return ResourceManager.GetString("GroupsCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вид выпускной квалификационной работы.
+        /// </summary>
+        public static string GWKType {
+            get {
+                return ResourceManager.GetString("GWKType", resourceCulture);
             }
         }
         
@@ -426,6 +579,15 @@ namespace CuratorHelper.Properties {
         public static string MainMenu {
             get {
                 return ResourceManager.GetString("MainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Оценка.
+        /// </summary>
+        public static string Mark {
+            get {
+                return ResourceManager.GetString("Mark", resourceCulture);
             }
         }
         
@@ -574,11 +736,65 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Данная практика уже существует.
+        /// </summary>
+        public static string PracticeExists {
+            get {
+                return ResourceManager.GetString("PracticeExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Данное название практики уже существует.
+        /// </summary>
+        public static string PracticeNameExists {
+            get {
+                return ResourceManager.GetString("PracticeNameExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Практики.
         /// </summary>
         public static string Practics {
             get {
                 return ResourceManager.GetString("Practics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вы не выбрали практики.
+        /// </summary>
+        public static string PracticsCountZero {
+            get {
+                return ResourceManager.GetString("PracticsCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выбрать дату защиты.
+        /// </summary>
+        public static string ProtectDateToolTip {
+            get {
+                return ResourceManager.GetString("ProtectDateToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Присвоена квалификация.
+        /// </summary>
+        public static string QualificationAwarded {
+            get {
+                return ResourceManager.GetString("QualificationAwarded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Такая квалификация уже существует.
+        /// </summary>
+        public static string QualificationExists {
+            get {
+                return ResourceManager.GetString("QualificationExists", resourceCulture);
             }
         }
         
@@ -723,6 +939,24 @@ namespace CuratorHelper.Properties {
         public static string TeachersCountZero {
             get {
                 return ResourceManager.GetString("TeachersCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Семестр.
+        /// </summary>
+        public static string Term {
+            get {
+                return ResourceManager.GetString("Term", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Тема.
+        /// </summary>
+        public static string Theme {
+            get {
+                return ResourceManager.GetString("Theme", resourceCulture);
             }
         }
         

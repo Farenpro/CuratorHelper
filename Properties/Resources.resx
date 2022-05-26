@@ -123,14 +123,29 @@
   <data name="AddCongrats" xml:space="preserve">
     <value>Успешно добавлено!</value>
   </data>
+  <data name="AddCourseWork" xml:space="preserve">
+    <value>Добавить курсовую работу</value>
+  </data>
   <data name="AddDiscipline" xml:space="preserve">
     <value>Добавить дисциплину</value>
+  </data>
+  <data name="AddGraduateWork" xml:space="preserve">
+    <value>Добавить ВКР</value>
   </data>
   <data name="AddGroup" xml:space="preserve">
     <value>Добавить группу</value>
   </data>
   <data name="AddObject" xml:space="preserve">
     <value>Добавить предмет</value>
+  </data>
+  <data name="AddPractice" xml:space="preserve">
+    <value>Добавить практику</value>
+  </data>
+  <data name="AddPracticeName" xml:space="preserve">
+    <value>Добавить название практики</value>
+  </data>
+  <data name="AddQualification" xml:space="preserve">
+    <value>Добавить квалификацию</value>
   </data>
   <data name="AddStudent" xml:space="preserve">
     <value>Добавить студента</value>
@@ -150,6 +165,15 @@
   <data name="Course" xml:space="preserve">
     <value>Курс</value>
   </data>
+  <data name="CourseWorkExists" xml:space="preserve">
+    <value>Проверьте наличие курсовой с похожей/иной темой по данной дисциплине и семестру</value>
+  </data>
+  <data name="CourseWorks" xml:space="preserve">
+    <value>Курсовые работы</value>
+  </data>
+  <data name="CourseWorksCountZero" xml:space="preserve">
+    <value>Вы не выбрали курсовые работы</value>
+  </data>
   <data name="CreateOrder" xml:space="preserve">
     <value>Создать приказ</value>
   </data>
@@ -165,6 +189,12 @@
   <data name="DatabaseError" xml:space="preserve">
     <value>Соединение с БД не установлено. Проверьте наличие БД в MSSQL, а также строку подключения</value>
   </data>
+  <data name="DaysDuration" xml:space="preserve">
+    <value>Продолжительность</value>
+  </data>
+  <data name="DaysDurationError" xml:space="preserve">
+    <value>Проверьте правильность продолжительности практики</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Удалить</value>
   </data>
@@ -173,6 +203,9 @@
   </data>
   <data name="Department" xml:space="preserve">
     <value>Отделение</value>
+  </data>
+  <data name="Discipline" xml:space="preserve">
+    <value>Дисциплина</value>
   </data>
   <data name="DisciplineExists" xml:space="preserve">
     <value>Такая дисциплина уже существует</value>
@@ -204,6 +237,12 @@
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
   </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Дата сдачи</value>
+  </data>
+  <data name="FinishDateToolTip" xml:space="preserve">
+    <value>Выбрать дату сдачи</value>
+  </data>
   <data name="Firstname" xml:space="preserve">
     <value>Имя</value>
   </data>
@@ -212,6 +251,15 @@
   </data>
   <data name="Gender" xml:space="preserve">
     <value>Пол</value>
+  </data>
+  <data name="GraduateWorkExists" xml:space="preserve">
+    <value>Данный студент уже защитил ВКР</value>
+  </data>
+  <data name="GraduateWorks" xml:space="preserve">
+    <value>Выпуск. квалиф. работы</value>
+  </data>
+  <data name="GraduateWorksCountZero" xml:space="preserve">
+    <value>Вы не выбрали ВКР</value>
   </data>
   <data name="GroupExists" xml:space="preserve">
     <value>Такая группа уже существует</value>
@@ -224,6 +272,9 @@
   </data>
   <data name="GroupsCountZero" xml:space="preserve">
     <value>Вы не выбрали группу</value>
+  </data>
+  <data name="GWKType" xml:space="preserve">
+    <value>Вид выпускной квалификационной работы</value>
   </data>
   <data name="HaveConnectionsError" xml:space="preserve">
     <value>Удаление невозможно, проверьте наличие любых связей</value>
@@ -239,6 +290,9 @@
   </data>
   <data name="MainMenu" xml:space="preserve">
     <value>Главное меню</value>
+  </data>
+  <data name="Mark" xml:space="preserve">
+    <value>Оценка</value>
   </data>
   <data name="Marks" xml:space="preserve">
     <value>Оценки</value>
@@ -288,8 +342,26 @@
   <data name="Pin" xml:space="preserve">
     <value>Прикрепить</value>
   </data>
+  <data name="PracticeExists" xml:space="preserve">
+    <value>Данная практика уже существует</value>
+  </data>
+  <data name="PracticeNameExists" xml:space="preserve">
+    <value>Данное название практики уже существует</value>
+  </data>
   <data name="Practics" xml:space="preserve">
     <value>Практики</value>
+  </data>
+  <data name="PracticsCountZero" xml:space="preserve">
+    <value>Вы не выбрали практики</value>
+  </data>
+  <data name="ProtectDateToolTip" xml:space="preserve">
+    <value>Выбрать дату защиты</value>
+  </data>
+  <data name="QualificationAwarded" xml:space="preserve">
+    <value>Присвоена квалификация</value>
+  </data>
+  <data name="QualificationExists" xml:space="preserve">
+    <value>Такая квалификация уже существует</value>
   </data>
   <data name="RequiredFillIn" xml:space="preserve">
     <value>Обязательно для заполнения</value>
@@ -338,6 +410,12 @@
   </data>
   <data name="TeachersCountZero" xml:space="preserve">
     <value>Вы не выбрали преподавателей на открепление</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>Семестр</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема</value>
   </data>
   <data name="TooMuchGroups" xml:space="preserve">
     <value>У данного куратора уже имеются 2 группы, хотите продолжить?</value>
