@@ -169,6 +169,15 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Направлен на работу (учебу).
+        /// </summary>
+        public static string AimedAt {
+            get {
+                return ResourceManager.GetString("AimedAt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Вы уверены, что хотите удалить?.
         /// </summary>
         public static string AreYouSureDelete {
@@ -187,11 +196,56 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Дата рождения.
+        /// </summary>
+        public static string Birthdate {
+            get {
+                return ResourceManager.GetString("Birthdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выбрать дату рождения.
+        /// </summary>
+        public static string BirthdateToolTip {
+            get {
+                return ResourceManager.GetString("BirthdateToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Место рождения.
+        /// </summary>
+        public static string BirthPlace {
+            get {
+                return ResourceManager.GetString("BirthPlace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Отмена.
         /// </summary>
         public static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Общественная работа.
+        /// </summary>
+        public static string CommunityService {
+            get {
+                return ResourceManager.GetString("CommunityService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to На базе классов.
+        /// </summary>
+        public static string CompletedClasses {
+            get {
+                return ResourceManager.GetString("CompletedClasses", resourceCulture);
             }
         }
         
@@ -385,6 +439,15 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Редактирование информации.
+        /// </summary>
+        public static string EditInfo {
+            get {
+                return ResourceManager.GetString("EditInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Изменить предметы.
         /// </summary>
         public static string EditObjects {
@@ -525,6 +588,15 @@ namespace CuratorHelper.Properties {
         public static string GroupsCountZero {
             get {
                 return ResourceManager.GetString("GroupsCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Адрес родителей (воспитателей).
+        /// </summary>
+        public static string GuardianAddress {
+            get {
+                return ResourceManager.GetString("GuardianAddress", resourceCulture);
             }
         }
         
@@ -822,6 +894,33 @@ namespace CuratorHelper.Properties {
         public static string SaveCongrats {
             get {
                 return ResourceManager.GetString("SaveCongrats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Дата выдачи аттестата.
+        /// </summary>
+        public static string SchoolGraduate {
+            get {
+                return ResourceManager.GetString("SchoolGraduate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выбрать дату выдачи аттестата.
+        /// </summary>
+        public static string SchoolGraduateToolTip {
+            get {
+                return ResourceManager.GetString("SchoolGraduateToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Название образов. учреждения.
+        /// </summary>
+        public static string SchoolName {
+            get {
+                return ResourceManager.GetString("SchoolName", resourceCulture);
             }
         }
         

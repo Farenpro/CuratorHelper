@@ -59,10 +59,18 @@ namespace CuratorHelper.Windows
             }
         }
 
-        public EditInfoWindow(Student student)
+        public EditInfoWindow(Student student, byte type)
         {
             InitializeComponent();
-            MainFrame.Navigate(new CreateOrderPage(student));
+            switch (type)
+            {
+                case 1:
+                    MainFrame.Navigate(new CreateOrderPage(student));
+                    break;
+                case 2:
+                    MainFrame.Navigate(new EditStudentInfoPage(student));
+                    break;
+            }
         }
     }
 }

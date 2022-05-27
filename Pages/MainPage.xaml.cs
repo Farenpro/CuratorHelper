@@ -15,7 +15,8 @@ namespace CuratorHelper.Pages
         public MainPage(bool a)
         {
             Binding();
-            BtnTeachers.Visibility = BtnGroups.Visibility = BtnStudents.Visibility = BtnOrders.Visibility = BtnObjAndDisc.Visibility = Visibility.Collapsed;
+            BtnTeachers.Visibility = BtnGroups.Visibility = BtnStudents.Visibility = BtnOrders.Visibility = 
+            BtnObjAndDisc.Visibility = BtnCourseWorks.Visibility = BtnGraduateWorks.Visibility = BtnPractics.Visibility = Visibility.Collapsed;
             BtnMyGroups.Visibility = Visibility.Visible;
         }
         private void Binding()
@@ -44,9 +45,6 @@ namespace CuratorHelper.Pages
         private void BtnCourseWorks_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new CourseWorksPage()); }
         private void BtnGraduateWorks_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new GraduateWorksPage()); }
         private void BtnPractics_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new PracticsPage()); }
-        private void BtnMyGroups_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void BtnMyGroups_Click(object sender, RoutedEventArgs e) { MainPageFrame.Navigate(new MyGroupsPage()); }
     }
 }

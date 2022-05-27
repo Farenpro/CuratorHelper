@@ -33,9 +33,9 @@ namespace CuratorHelper.Models
         public int GroupID { get; set; }
         public string SpecializationCode { get; set; }
         public Nullable<System.DateTime> Birthdate { get; set; }
-        public Nullable<int> GenderID { get; set; }
+        public int GenderID { get; set; }
         public string BirthPlace { get; set; }
-        public Nullable<int> CompletedClassesID { get; set; }
+        public Nullable<byte> CompletedClassesID { get; set; }
         public Nullable<System.DateTime> SchoolGraduateDate { get; set; }
         public string SchoolName { get; set; }
         public string GuardianAddress { get; set; }

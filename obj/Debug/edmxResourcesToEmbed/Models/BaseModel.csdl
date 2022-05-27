@@ -265,9 +265,9 @@
     <Property Name="GroupID" Type="Int32" Nullable="false" />
     <Property Name="SpecializationCode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Birthdate" Type="DateTime" Precision="0" />
-    <Property Name="GenderID" Type="Int32" />
+    <Property Name="GenderID" Type="Int32" Nullable="false" />
     <Property Name="BirthPlace" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="CompletedClassesID" Type="Int32" />
+    <Property Name="CompletedClassesID" Type="Byte" />
     <Property Name="SchoolGraduateDate" Type="DateTime" Precision="0" />
     <Property Name="SchoolName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="GuardianAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -450,7 +450,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Student_GenderID">
-    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
     <End Role="Student" Type="Self.Student" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Gender">

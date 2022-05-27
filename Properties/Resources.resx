@@ -153,14 +153,32 @@
   <data name="AddTeacher" xml:space="preserve">
     <value>Добавить преподавателя</value>
   </data>
+  <data name="AimedAt" xml:space="preserve">
+    <value>Направлен на работу (учебу)</value>
+  </data>
   <data name="AreYouSureDelete" xml:space="preserve">
     <value>Вы уверены, что хотите удалить?</value>
   </data>
   <data name="Authorization" xml:space="preserve">
     <value>Авторизация</value>
   </data>
+  <data name="Birthdate" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="BirthdateToolTip" xml:space="preserve">
+    <value>Выбрать дату рождения</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Место рождения</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
+  </data>
+  <data name="CommunityService" xml:space="preserve">
+    <value>Общественная работа</value>
+  </data>
+  <data name="CompletedClasses" xml:space="preserve">
+    <value>На базе классов</value>
   </data>
   <data name="Course" xml:space="preserve">
     <value>Курс</value>
@@ -225,6 +243,9 @@
   <data name="EditCurCurator" xml:space="preserve">
     <value>Изменить текущего куратора группы</value>
   </data>
+  <data name="EditInfo" xml:space="preserve">
+    <value>Редактирование информации</value>
+  </data>
   <data name="EditObjects" xml:space="preserve">
     <value>Изменить предметы</value>
   </data>
@@ -272,6 +293,9 @@
   </data>
   <data name="GroupsCountZero" xml:space="preserve">
     <value>Вы не выбрали группу</value>
+  </data>
+  <data name="GuardianAddress" xml:space="preserve">
+    <value>Адрес родителей (воспитателей)</value>
   </data>
   <data name="GWKType" xml:space="preserve">
     <value>Вид выпускной квалификационной работы</value>
@@ -371,6 +395,15 @@
   </data>
   <data name="SaveCongrats" xml:space="preserve">
     <value>Успешно сохранено!</value>
+  </data>
+  <data name="SchoolGraduate" xml:space="preserve">
+    <value>Дата выдачи аттестата</value>
+  </data>
+  <data name="SchoolGraduateToolTip" xml:space="preserve">
+    <value>Выбрать дату выдачи аттестата</value>
+  </data>
+  <data name="SchoolName" xml:space="preserve">
+    <value>Название образов. учреждения</value>
   </data>
   <data name="Secretary" xml:space="preserve">
     <value>Секретарь</value>

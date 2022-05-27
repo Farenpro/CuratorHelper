@@ -218,9 +218,9 @@
     <Property Name="GroupID" Type="int" Nullable="false" />
     <Property Name="SpecializationCode" Type="nvarchar" MaxLength="15" Nullable="false" />
     <Property Name="Birthdate" Type="date" />
-    <Property Name="GenderID" Type="int" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
     <Property Name="BirthPlace" Type="nvarchar" MaxLength="100" />
-    <Property Name="CompletedClassesID" Type="int" />
+    <Property Name="CompletedClassesID" Type="tinyint" />
     <Property Name="SchoolGraduateDate" Type="date" />
     <Property Name="SchoolName" Type="nvarchar" MaxLength="100" />
     <Property Name="GuardianAddress" Type="nvarchar" MaxLength="100" />
@@ -576,7 +576,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Student_GenderID">
-    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
     <End Role="Student" Type="Self.Student" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Gender">

@@ -244,6 +244,12 @@
     <Compile Include="Pages\EditPages\CuratorEditPage.xaml.cs">
       <DependentUpon>CuratorEditPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\EditStudentInfoPage.xaml.cs">
+      <DependentUpon>EditStudentInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\StudentPenAndIncPage.xaml.cs">
+      <DependentUpon>StudentPenAndIncPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\TeacherEditPage.xaml.cs">
       <DependentUpon>TeacherEditPage.xaml</DependentUpon>
     </Compile>
@@ -261,6 +267,9 @@
     </Compile>
     <Compile Include="Pages\ModulePages\GroupsPage.xaml.cs">
       <DependentUpon>GroupsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\MyGroupsPage.xaml.cs">
+      <DependentUpon>MyGroupsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\OrdersPage.xaml.cs">
       <DependentUpon>OrdersPage.xaml</DependentUpon>
@@ -372,6 +381,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\EditStudentInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\StudentPenAndIncPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditPages\TeacherEditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -393,6 +410,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ModulePages\GroupsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\MyGroupsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

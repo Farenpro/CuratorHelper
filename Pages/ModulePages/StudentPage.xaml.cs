@@ -37,8 +37,8 @@ namespace CuratorHelper.Pages.ModulePages
 
         private void BtnOrderForm_Click(object sender, RoutedEventArgs e)
         {
-            EditInfoWindow editInfoWindow = new EditInfoWindow(DGStudents.SelectedItem as Student);
-            editInfoWindow.Show();
+            EditInfoWindow editInfoWindow = new EditInfoWindow(DGStudents.SelectedItem as Student, 1);
+            editInfoWindow.ShowDialog();
         }
 
         private void FillDGStudents() { DGStudents.ItemsSource = App.Database.Students.ToList(); }

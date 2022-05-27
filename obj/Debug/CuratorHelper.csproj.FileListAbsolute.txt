@@ -79,3 +79,9 @@ D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\PracticsPage.baml
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddPracticeNamePage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddPracticeNamePage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\MyGroupsPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\MyGroupsPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\EditStudentInfoPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentPenAndIncPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\EditStudentInfoPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentPenAndIncPage.baml
