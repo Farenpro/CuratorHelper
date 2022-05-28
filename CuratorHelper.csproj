@@ -113,6 +113,7 @@
     <Compile Include="Models\Credit.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreditPartial.cs" />
     <Compile Include="Models\Department.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -143,6 +144,7 @@
     <Compile Include="Models\Omission.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OmissionPartial.cs" />
     <Compile Include="Models\OmissionType.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -156,6 +158,7 @@
     <Compile Include="Models\PenAndInc.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PenAndIncPartial.cs" />
     <Compile Include="Models\PenAndIncType.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -229,6 +232,12 @@
     <Compile Include="Pages\EditPages\AddQualificationPage.xaml.cs">
       <DependentUpon>AddQualificationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\AddStudentMarksPage.xaml.cs">
+      <DependentUpon>AddStudentMarksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddStudentOmission.xaml.cs">
+      <DependentUpon>AddStudentOmission.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\CreateOrderPage.xaml.cs">
       <DependentUpon>CreateOrderPage.xaml</DependentUpon>
     </Compile>
@@ -246,6 +255,15 @@
     </Compile>
     <Compile Include="Pages\EditPages\EditStudentInfoPage.xaml.cs">
       <DependentUpon>EditStudentInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddStudentPenAndIncPage.xaml.cs">
+      <DependentUpon>AddStudentPenAndIncPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\StudentMarksPage.xaml.cs">
+      <DependentUpon>StudentMarksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\StudentOmissions.xaml.cs">
+      <DependentUpon>StudentOmissions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditPages\StudentPenAndIncPage.xaml.cs">
       <DependentUpon>StudentPenAndIncPage.xaml</DependentUpon>
@@ -361,6 +379,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\AddStudentMarksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddStudentOmission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditPages\CreateOrderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -382,6 +408,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EditPages\EditStudentInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddStudentPenAndIncPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\StudentMarksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\StudentOmissions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

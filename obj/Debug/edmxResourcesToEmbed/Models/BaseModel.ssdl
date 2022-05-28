@@ -27,14 +27,14 @@
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="StudentID" Type="int" Nullable="false" />
     <Property Name="DisciplineID" Type="int" Nullable="false" />
-    <Property Name="Term1Mark" Type="int" />
-    <Property Name="Term2Mark" Type="int" />
-    <Property Name="Term3Mark" Type="int" />
-    <Property Name="Term4Mark" Type="int" />
-    <Property Name="Term5Mark" Type="int" />
-    <Property Name="Term6Mark" Type="int" />
-    <Property Name="Term7Mark" Type="int" />
-    <Property Name="Term8Mark" Type="int" />
+    <Property Name="Term1Mark" Type="tinyint" />
+    <Property Name="Term2Mark" Type="tinyint" />
+    <Property Name="Term3Mark" Type="tinyint" />
+    <Property Name="Term4Mark" Type="tinyint" />
+    <Property Name="Term5Mark" Type="tinyint" />
+    <Property Name="Term6Mark" Type="tinyint" />
+    <Property Name="Term7Mark" Type="tinyint" />
+    <Property Name="Term8Mark" Type="tinyint" />
   </EntityType>
   <EntityType Name="Department">
     <Key>

@@ -1,4 +1,5 @@
-﻿using CuratorHelper.Models;
+﻿using CuratorHelper.Classes;
+using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System.Linq;
 using System.Windows;
@@ -23,24 +24,26 @@ namespace CuratorHelper.Pages.ModulePages
 
         private void BtnStudentInfoEdit_Click(object sender, RoutedEventArgs e)
         {
-            EditInfoWindow editInfoWindow = new EditInfoWindow(DGMyGroupsStudents.SelectedItem as Student, 2);
-            editInfoWindow.ShowDialog();
+            SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 2);
             FillDGMyGroupsStudents();
         }
 
-        private void BtnStudentMarks_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void BtnStudentMarks_Click(object sender, RoutedEventArgs e) 
+        { 
+            SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 5);
+            FillDGMyGroupsStudents();
         }
 
         private void BtnStudentOmissions_Click(object sender, RoutedEventArgs e)
         {
-
+            SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 7);
+            FillDGMyGroupsStudents();
         }
 
-        private void BtnStudentPenAndInc_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void BtnStudentPenAndInc_Click(object sender, RoutedEventArgs e) 
+        { 
+            SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 3);
+            FillDGMyGroupsStudents();
         }
 
         private void BtnStudentPerCard_Click(object sender, RoutedEventArgs e)

@@ -17,14 +17,14 @@ namespace CuratorHelper.Models
         public int ID { get; set; }
         public int StudentID { get; set; }
         public int DisciplineID { get; set; }
-        public Nullable<int> Term1Mark { get; set; }
-        public Nullable<int> Term2Mark { get; set; }
-        public Nullable<int> Term3Mark { get; set; }
-        public Nullable<int> Term4Mark { get; set; }
-        public Nullable<int> Term5Mark { get; set; }
-        public Nullable<int> Term6Mark { get; set; }
-        public Nullable<int> Term7Mark { get; set; }
-        public Nullable<int> Term8Mark { get; set; }
+        public Nullable<byte> Term1Mark { get; set; }
+        public Nullable<byte> Term2Mark { get; set; }
+        public Nullable<byte> Term3Mark { get; set; }
+        public Nullable<byte> Term4Mark { get; set; }
+        public Nullable<byte> Term5Mark { get; set; }
+        public Nullable<byte> Term6Mark { get; set; }
+        public Nullable<byte> Term7Mark { get; set; }
+        public Nullable<byte> Term8Mark { get; set; }
     
         public virtual Discipline Discipline { get; set; }
         public virtual Student Student { get; set; }

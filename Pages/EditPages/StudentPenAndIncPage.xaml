@@ -1,14 +1,36 @@
 ﻿<Page x:Class="CuratorHelper.Pages.EditPages.StudentPenAndIncPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:CuratorHelper.Pages.EditPages"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="StudentPenAndIncPage">
-
-    <Grid>
-        
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:res="clr-namespace:CuratorHelper.Properties"
+      Height="340" Width="400" MinWidth="400" MinHeight="340" TextElement.FontSize="16"
+      Title="{x:Static res:Resources.StudentPenAndInc}" FontFamily="{StaticResource FontMain}">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="LStudentName" Style="{StaticResource LDescription}"/>
+        <Button x:Name="BtnAddPenAndInc" Grid.Row="1" Margin="5" Content="{x:Static res:Resources.AddStudentPenAndInc}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddPenAndInc_Click"/>
+        <DataGrid x:Name="DGPenAndIncs" Width="auto" Grid.Row="2" Background="White" Foreground="Blue" CanUserDeleteRows="False" HeadersVisibility="Column" IsReadOnly="True" SelectedValuePath="ID" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="FullRow">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="auto" Header="Тип" Binding="{Binding TypeName}"/>
+                <DataGridTextColumn Width="auto" Header="Характер" Binding="{Binding Nature}"/>
+                <DataGridTextColumn Width="auto" Header="№ и дата приказа" Binding="{Binding OrderInfo}"/>
+            </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryHueMidBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <Button x:Name="BtnDeletePenAndIncs" Grid.Row="3" Width="auto" Margin="0,0,0,30" Content="{x:Static res:Resources.Delete}" Background="Red" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnDeletePenAndIncs_Click"/>
     </Grid>
 </Page>

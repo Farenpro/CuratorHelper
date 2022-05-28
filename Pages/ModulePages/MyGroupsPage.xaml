@@ -48,7 +48,7 @@
                 <DataGridTemplateColumn Width="auto" Header="Личная карточка">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button x:Name="BtnStudentPerCard" Width="auto" Margin="5" Content="{x:Static res:Resources.Edit}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnStudentPerCard_Click"/>
+                            <Button x:Name="BtnStudentPerCard" Width="auto" Margin="5" Content="{x:Static res:Resources.Form}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnStudentPerCard_Click"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

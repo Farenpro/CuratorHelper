@@ -70,6 +70,24 @@ namespace CuratorHelper.Windows
                 case 2:
                     MainFrame.Navigate(new EditStudentInfoPage(student));
                     break;
+                case 3:
+                    MainFrame.Navigate(new StudentPenAndIncPage(student));
+                    break;
+                case 4:
+                    MainFrame.Navigate(new AddStudentPenAndIncPage(student));
+                    break;
+                case 5:
+                    MainFrame.Navigate(new StudentMarksPage(student));
+                    break;
+                case 6:
+                    MainFrame.Navigate(new AddStudentMarksPage(student));
+                    break;
+                case 7:
+                    MainFrame.Navigate(new StudentOmissions(student));
+                    break;
+                case 8:
+                    MainFrame.Navigate(new AddStudentOmission(student));
+                    break;
             }
         }
     }

@@ -31,14 +31,14 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="StudentID" Type="Int32" Nullable="false" />
     <Property Name="DisciplineID" Type="Int32" Nullable="false" />
-    <Property Name="Term1Mark" Type="Int32" />
-    <Property Name="Term2Mark" Type="Int32" />
-    <Property Name="Term3Mark" Type="Int32" />
-    <Property Name="Term4Mark" Type="Int32" />
-    <Property Name="Term5Mark" Type="Int32" />
-    <Property Name="Term6Mark" Type="Int32" />
-    <Property Name="Term7Mark" Type="Int32" />
-    <Property Name="Term8Mark" Type="Int32" />
+    <Property Name="Term1Mark" Type="Byte" />
+    <Property Name="Term2Mark" Type="Byte" />
+    <Property Name="Term3Mark" Type="Byte" />
+    <Property Name="Term4Mark" Type="Byte" />
+    <Property Name="Term5Mark" Type="Byte" />
+    <Property Name="Term6Mark" Type="Byte" />
+    <Property Name="Term7Mark" Type="Byte" />
+    <Property Name="Term8Mark" Type="Byte" />
     <NavigationProperty Name="Discipline" Relationship="Self.FK_Credit_Discipline" FromRole="Credit" ToRole="Discipline" />
     <NavigationProperty Name="Student" Relationship="Self.FK_Credit_Student" FromRole="Credit" ToRole="Student" />
   </EntityType>

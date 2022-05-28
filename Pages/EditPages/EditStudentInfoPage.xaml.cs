@@ -62,12 +62,12 @@ namespace CuratorHelper.Pages.EditPages
             CommunityService = Student.CommunityService;
             DataContext = this;
             CBoxGender.ItemsSource = App.Database.Genders.ToList();
+            CBoxGender.SelectedItem = Student.Gender;
             DPSchoolGraduate.DisplayDateStart = DateTime.Now.AddYears(-99);
             DPSchoolGraduate.DisplayDateEnd = DateTime.Now.AddYears(-14);
             DPBirthdate.DisplayDateStart = DateTime.Now.AddYears(-99);
             DPBirthdate.DisplayDateEnd = DateTime.Now.AddYears(-14);
             DPBirthdate.SelectedDate = Student.Birthdate;
-            CBoxGender.SelectedItem = Student.Gender;
             CBoxCompletedClasses.SelectedItem = Student.CompletedClassesID;
             DPSchoolGraduate.SelectedDate = Student.SchoolGraduateDate;
         }

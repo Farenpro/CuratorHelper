@@ -1,0 +1,58 @@
+﻿<Page x:Class="CuratorHelper.Pages.EditPages.AddStudentOmission"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:res="clr-namespace:CuratorHelper.Properties"
+      Height="450" Width="1010" MinWidth="1010" MinHeight="450" TextElement.FontSize="16"
+      Title="{x:Static res:Resources.AddStudentOmissions}" FontFamily="{StaticResource FontMain}">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="{x:Static res:Resources.AddStudentOmissions}" Style="{StaticResource LDescription}"/>
+        <Label x:Name="LStudentName" Grid.Row="1" Style="{StaticResource LDescription}"/>
+        <Label Grid.Row="2" Content="{x:Static res:Resources.OmissionType}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxOmissionTypes" Grid.Row="3" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedItem="{Binding OmissionType, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True" DisplayMemberPath="Name"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" SelectionChanged="CBoxOmissionTypes_SelectionChanged" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+        <Label Grid.Row="4" Content="{x:Static res:Resources.Term1}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm1Count" Grid.Row="5" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term1Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="6" Content="{x:Static res:Resources.Term2}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm2Count" Grid.Row="7" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term2Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="{x:Static res:Resources.Term3}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm3Count" Grid.Row="3" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term3Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="4" Grid.Column="1" Content="{x:Static res:Resources.Term4}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm4Count" Grid.Row="5" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term4Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="6" Grid.Column="1" Content="{x:Static res:Resources.Term5}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm5Count" Grid.Row="7" Grid.Column="1" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term5Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="{x:Static res:Resources.Term6}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm6Count" Grid.Row="3" Grid.Column="2" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term6Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="4" Grid.Column="2" Content="{x:Static res:Resources.Term7}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm7Count" Grid.Row="5" Grid.Column="2" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term7Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Label Grid.Row="6" Grid.Column="2" Content="{x:Static res:Resources.Term8}" Style="{StaticResource LDescription}"/>
+        <TextBox x:Name="TBoxTerm8Count" Grid.Row="7" Grid.Column="2" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" Text="{Binding Term8Count, UpdateSourceTrigger=PropertyChanged, TargetNullValue={x:Static sys:String.Empty}}"
+                 BorderBrush="Black" PreviewTextInput="TBox_PreviewTextInput" Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        <Button x:Name="BtnCancel" Grid.Row="10" Margin="5" Content="{x:Static res:Resources.Cancel}" Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="BtnCancel_Click"/>
+        <Button x:Name="BtnAddEdit" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" Content="{x:Static res:Resources.AddEdit}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnAddEdit_Click"/>
+    </Grid>
+</Page>

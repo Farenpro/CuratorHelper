@@ -82,6 +82,16 @@ D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\MyGroupsPage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\MyGroupsPage.baml
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\EditStudentInfoPage.g.cs
-D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentPenAndIncPage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\EditStudentInfoPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentPenAndIncPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentPenAndIncPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentPenAndIncPage.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentPenAndIncPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentMarksPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentMarksPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentMarksPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentMarksPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentOmission.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentOmissions.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentOmission.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentOmissions.baml

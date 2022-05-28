@@ -129,6 +129,9 @@
   <data name="AddDiscipline" xml:space="preserve">
     <value>Добавить дисциплину</value>
   </data>
+  <data name="AddEdit" xml:space="preserve">
+    <value>Добавить/изменить</value>
+  </data>
   <data name="AddGraduateWork" xml:space="preserve">
     <value>Добавить ВКР</value>
   </data>
@@ -149,6 +152,15 @@
   </data>
   <data name="AddStudent" xml:space="preserve">
     <value>Добавить студента</value>
+  </data>
+  <data name="AddStudentMarks" xml:space="preserve">
+    <value>Добавить/изменить оценки</value>
+  </data>
+  <data name="AddStudentOmissions" xml:space="preserve">
+    <value>Добавить/изменить пропуски</value>
+  </data>
+  <data name="AddStudentPenAndInc" xml:space="preserve">
+    <value>Добавить поощрение/взыскание</value>
   </data>
   <data name="AddTeacher" xml:space="preserve">
     <value>Добавить преподавателя</value>
@@ -321,6 +333,9 @@
   <data name="Marks" xml:space="preserve">
     <value>Оценки</value>
   </data>
+  <data name="MarksCountZero" xml:space="preserve">
+    <value>Вы не выбрали оценки по дисциплинам на удаление</value>
+  </data>
   <data name="Middlename" xml:space="preserve">
     <value>Отчество</value>
   </data>
@@ -329,6 +344,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>Название</value>
+  </data>
+  <data name="Nature" xml:space="preserve">
+    <value>Характер</value>
   </data>
   <data name="NeedToFillRequired" xml:space="preserve">
     <value>Вам необходимо заполнить все обязательные поля</value>
@@ -342,8 +360,17 @@
   <data name="ObjectsAndDisciplines" xml:space="preserve">
     <value>Предметы и дисциплины</value>
   </data>
+  <data name="OmissionCountError" xml:space="preserve">
+    <value>Количество пропусков не может превышать количество учебных часов в семестре</value>
+  </data>
   <data name="Omissions" xml:space="preserve">
     <value>Пропуски</value>
+  </data>
+  <data name="OmissionType" xml:space="preserve">
+    <value>Тип пропуска</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Приказ</value>
   </data>
   <data name="Orders" xml:space="preserve">
     <value>Приказы</value>
@@ -356,6 +383,12 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
+  </data>
+  <data name="PenAndIncExists" xml:space="preserve">
+    <value>Такое взыскание/поощрение уже существует по данному приказу</value>
+  </data>
+  <data name="PenAndIncsCountZero" xml:space="preserve">
+    <value>Вы не выбрали взыскания/поощрения</value>
   </data>
   <data name="PhotoEdit" xml:space="preserve">
     <value>Смена/Удаление фото</value>
@@ -420,6 +453,15 @@
   <data name="StudentExists" xml:space="preserve">
     <value>Такой студент уже существует</value>
   </data>
+  <data name="StudentMarks" xml:space="preserve">
+    <value>Оценки студента</value>
+  </data>
+  <data name="StudentOmissions" xml:space="preserve">
+    <value>Пропуски студента</value>
+  </data>
+  <data name="StudentPenAndInc" xml:space="preserve">
+    <value>Поощрения/взыскания студента</value>
+  </data>
   <data name="Students" xml:space="preserve">
     <value>Студенты</value>
   </data>
@@ -447,11 +489,38 @@
   <data name="Term" xml:space="preserve">
     <value>Семестр</value>
   </data>
+  <data name="Term1" xml:space="preserve">
+    <value>1 семестр</value>
+  </data>
+  <data name="Term2" xml:space="preserve">
+    <value>2 семестр</value>
+  </data>
+  <data name="Term3" xml:space="preserve">
+    <value>3 семестр</value>
+  </data>
+  <data name="Term4" xml:space="preserve">
+    <value>4 семестр</value>
+  </data>
+  <data name="Term5" xml:space="preserve">
+    <value>5 семестр</value>
+  </data>
+  <data name="Term6" xml:space="preserve">
+    <value>6 семестр</value>
+  </data>
+  <data name="Term7" xml:space="preserve">
+    <value>7 семестр</value>
+  </data>
+  <data name="Term8" xml:space="preserve">
+    <value>8 семестр</value>
+  </data>
   <data name="Theme" xml:space="preserve">
     <value>Тема</value>
   </data>
   <data name="TooMuchGroups" xml:space="preserve">
     <value>У данного куратора уже имеются 2 группы, хотите продолжить?</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
   </data>
   <data name="Unpin" xml:space="preserve">
     <value>Открепить</value>

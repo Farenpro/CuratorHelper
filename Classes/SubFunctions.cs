@@ -1,4 +1,5 @@
-﻿using CuratorHelper.Windows;
+﻿using CuratorHelper.Models;
+using CuratorHelper.Windows;
 using System;
 using System.IO;
 using System.Windows;
@@ -30,6 +31,11 @@ namespace CuratorHelper.Classes
         public static void ShowEditWindow(byte type)
         {
             EditInfoWindow editInfoWindow = new EditInfoWindow(type);
+            editInfoWindow.ShowDialog();
+        }
+        public static void ShowEditWindow(Student student, byte type)
+        {
+            EditInfoWindow editInfoWindow = new EditInfoWindow(student, type);
             editInfoWindow.ShowDialog();
         }
     }
