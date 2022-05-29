@@ -19,6 +19,7 @@ namespace CuratorHelper.Models
         {
             this.CourseWorks = new HashSet<CourseWork>();
             this.Credits = new HashSet<Credit>();
+            this.DemoExams = new HashSet<DemoExam>();
             this.GraduateWorks = new HashSet<GraduateWork>();
             this.Omissions = new HashSet<Omission>();
             this.Orders = new HashSet<Order>();
@@ -46,6 +47,8 @@ namespace CuratorHelper.Models
         public virtual ICollection<CourseWork> CourseWorks { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Credit> Credits { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DemoExam> DemoExams { get; set; }
         public virtual Gender Gender { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GraduateWork> GraduateWorks { get; set; }

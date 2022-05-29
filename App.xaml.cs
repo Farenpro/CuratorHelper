@@ -2,9 +2,9 @@
 using CuratorHelper.Models;
 using CuratorHelper.Pages;
 using CuratorHelper.Windows;
+using System.Linq;
 using System.Windows;
 using res = CuratorHelper.Properties;
-using System.Linq;
 
 
 namespace CuratorHelper
@@ -43,10 +43,7 @@ namespace CuratorHelper
                     if (MessageBoxResult.OK == Messages.ShowQuestion("Войти как секретарь?"))
                         (Current.MainWindow as MainMenuWindow).MainFrame.Navigate(new MainPage());
                     else
-                    {
-                        App.CurUser.Role = App.Database.Roles.Where(p => p.ID == 2).SingleOrDefault();
                         (Current.MainWindow as MainMenuWindow).MainFrame.Navigate(new MainPage(false));
-                    }
                     break;
                 case 2:
                     (Current.MainWindow as MainMenuWindow).MainFrame.Navigate(new MainPage(false));

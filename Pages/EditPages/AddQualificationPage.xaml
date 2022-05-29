@@ -2,7 +2,6 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:sys="clr-namespace:System;assembly=mscorlib"
       xmlns:res="clr-namespace:CuratorHelper.Properties"
       Height="230" Width="330" MinWidth="330" MinHeight="230" TextElement.FontSize="16"
       Title="{x:Static res:Resources.AddQualification}" FontFamily="{StaticResource FontMain}">

@@ -1,19 +1,9 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -39,21 +29,26 @@ namespace CuratorHelper.Pages.EditPages
         {
             if (Student != null && OrderType != null)
             {
-                int id = 1;
-                if (App.Database.Orders.Count() > 0)
-                    id = App.Database.Orders.Select(p => p.ID).Max() + 1;
-                Order order = new Order()
+                if (App.Database.Orders.Where(p => p.StudentID == Student.ID && p.OrderTypeID == OrderType.ID && p.Date.Day == DateTime.Now.Day && p.Course == Course).Count() <= 0)
                 {
-                    ID = id,
-                    OrderTypeID = OrderType.ID,
-                    Date = DateTime.Now,
-                    StudentID = Student.ID,
-                    Course = Course
-                };
-                App.Database.Orders.Add(order);
-                App.DBRefresh();
-                App.Messages.ShowInfo(Properties.Resources.AddCongrats);
-                Window.Close();
+                    int id = 1;
+                    if (App.Database.Orders.Count() > 0)
+                        id = App.Database.Orders.Select(p => p.ID).Max() + 1;
+                    Order order = new Order()
+                    {
+                        ID = id,
+                        OrderTypeID = OrderType.ID,
+                        Date = DateTime.Now,
+                        StudentID = Student.ID,
+                        Course = Course
+                    };
+                    App.Database.Orders.Add(order);
+                    App.DBRefresh();
+                    App.Messages.ShowInfo(Properties.Resources.AddCongrats);
+                    Window.Close();
+                }
+                else
+                    App.Messages.ShowError(Properties.Resources.OrderExists);
             }
             else
                 App.Messages.ShowError(Properties.Resources.NeedToFillRequired);

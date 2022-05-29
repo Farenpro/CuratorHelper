@@ -1,19 +1,8 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -45,13 +34,15 @@ namespace CuratorHelper.Pages.EditPages
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (Surname != "" && Firstname != "" && Gender!= null && Specialization != null && Group != null)
+            if (Surname != "" && Firstname != "" && Gender != null && Specialization != null && Group != null)
             {
                 if (App.Database.Students.Where(p => p.Surname == Surname && p.Firstname == Firstname && p.GroupID == Group.ID).Count() <= 0)
                 {
                     int id = 1;
                     if (App.Database.Students.Count() > 0)
                         id = App.Database.Students.Select(p => p.ID).Max() + 1;
+                    if (Middlename == "")
+                        Middlename = null;
                     Student student = new Student()
                     {
                         ID = id,

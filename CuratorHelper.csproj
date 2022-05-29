@@ -114,6 +114,13 @@
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CreditPartial.cs" />
+    <Compile Include="Models\DemoExam.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DemoExamName.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DemoExamPartial.cs" />
     <Compile Include="Models\Department.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -211,6 +218,12 @@
     <Compile Include="Pages\EditPages\AddCourseWorkPage.xaml.cs">
       <DependentUpon>AddCourseWorkPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\AddDemoExamNamePage.xaml.cs">
+      <DependentUpon>AddDemoExamNamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPages\AddDemoExamPage.xaml.cs">
+      <DependentUpon>AddDemoExamPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\AddDisciplinePage.xaml.cs">
       <DependentUpon>AddDisciplinePage.xaml</DependentUpon>
     </Compile>
@@ -259,6 +272,9 @@
     <Compile Include="Pages\EditPages\AddStudentPenAndIncPage.xaml.cs">
       <DependentUpon>AddStudentPenAndIncPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditPages\OutputStatementPage.xaml.cs">
+      <DependentUpon>OutputStatementPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EditPages\StudentMarksPage.xaml.cs">
       <DependentUpon>StudentMarksPage.xaml</DependentUpon>
     </Compile>
@@ -276,6 +292,9 @@
     </Compile>
     <Compile Include="Pages\ModulePages\CourseWorksPage.xaml.cs">
       <DependentUpon>CourseWorksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModulePages\DemoExamsPage.xaml.cs">
+      <DependentUpon>DemoExamsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModulePages\DisciplineObjectsPage.xaml.cs">
       <DependentUpon>DisciplineObjectsPage.xaml</DependentUpon>
@@ -338,6 +357,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Resources\Личная карточка ШАБЛОН.docx" />
+    <None Include="Resources\Успеваемость ШАБЛОН.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -348,6 +369,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EditPages\AddCourseWorkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddDemoExamNamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPages\AddDemoExamPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -415,6 +444,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPages\OutputStatementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditPages\StudentMarksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -436,6 +469,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ModulePages\CourseWorksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModulePages\DemoExamsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -484,9 +521,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Models\BaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BaseModel.edmx</DependentUpon>
@@ -497,6 +531,44 @@
       <DependentUpon>BaseModel.edmx</DependentUpon>
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />

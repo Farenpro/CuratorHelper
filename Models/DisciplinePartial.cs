@@ -3,7 +3,26 @@
     public partial class Discipline
     {
         public string ObjectName => Object.Name;
-        public string IndexName => DisciplineIndex.Name;
-        public string IndexAndName => $"{IndexName} {ObjectName}";
+        public string IndexName
+        {
+            get
+            {
+                if (DisciplineIndex != null)
+                    return DisciplineIndex.Name;
+                else
+                    return null;
+            }
+        }
+
+        public string IndexAndName
+        {
+            get
+            {
+                if (IndexName != null)
+                    return $"{IndexName} {ObjectName}";
+                else
+                    return ObjectName;
+            }
+        }
     }
 }

@@ -2,20 +2,11 @@
 using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -44,7 +35,7 @@ namespace CuratorHelper.Pages.EditPages
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (Student != null && PracticeName != null && Term != 0 && Mark != 0 && TBoxDayDuration.Text!="")
+            if (Student != null && PracticeName != null && Term != 0 && Mark != 0 && TBoxDayDuration.Text != "")
             {
                 if (Convert.ToInt32(TBoxDayDuration.Text) >= 1 && Convert.ToInt32(TBoxDayDuration.Text) <= 90)
                 {
@@ -84,7 +75,7 @@ namespace CuratorHelper.Pages.EditPages
             else
                 e.Handled = true;
         }
-        
+
         private void BtnAddPracticeName_Click(object sender, RoutedEventArgs e)
         {
             SubFunctions.ShowEditWindow(14);

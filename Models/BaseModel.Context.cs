@@ -28,6 +28,8 @@ namespace CuratorHelper.Models
         public virtual DbSet<AppointedTeacher> AppointedTeachers { get; set; }
         public virtual DbSet<CourseWork> CourseWorks { get; set; }
         public virtual DbSet<Credit> Credits { get; set; }
+        public virtual DbSet<DemoExam> DemoExams { get; set; }
+        public virtual DbSet<DemoExamName> DemoExamNames { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Discipline> Disciplines { get; set; }
         public virtual DbSet<DisciplineIndex> DisciplineIndexes { get; set; }

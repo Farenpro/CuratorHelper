@@ -88,6 +88,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Добавить результат демо.
+        /// </summary>
+        public static string AddDemoExam {
+            get {
+                return ResourceManager.GetString("AddDemoExam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить название демо.
+        /// </summary>
+        public static string AddDemoExamName {
+            get {
+                return ResourceManager.GetString("AddDemoExamName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Добавить дисциплину.
         /// </summary>
         public static string AddDiscipline {
@@ -394,6 +412,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Результат за этот демо уже выставлен.
+        /// </summary>
+        public static string DemoExamExists {
+            get {
+                return ResourceManager.GetString("DemoExamExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Такое название уже существует.
+        /// </summary>
+        public static string DemoExamNameExists {
+            get {
+                return ResourceManager.GetString("DemoExamNameExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Демо-экзамены.
         /// </summary>
         public static string DemoExams {
@@ -435,6 +471,15 @@ namespace CuratorHelper.Properties {
         public static string DisciplinesCountZero {
             get {
                 return ResourceManager.GetString("DisciplinesCountZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Проверьте наличие выставленных по дисциплинам оценок в семестре, а также количество дисциплин.
+        /// </summary>
+        public static string DisciplinesError {
+            get {
+                return ResourceManager.GetString("DisciplinesError", resourceCulture);
             }
         }
         
@@ -826,6 +871,15 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Такой приказ уже существует.
+        /// </summary>
+        public static string OrderExists {
+            get {
+                return ResourceManager.GetString("OrderExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Приказы.
         /// </summary>
         public static string Orders {
@@ -849,6 +903,24 @@ namespace CuratorHelper.Properties {
         public static string OrderType {
             get {
                 return ResourceManager.GetString("OrderType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вывести.
+        /// </summary>
+        public static string Output {
+            get {
+                return ResourceManager.GetString("Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вывод ведомости.
+        /// </summary>
+        public static string OutputStatement {
+            get {
+                return ResourceManager.GetString("OutputStatement", resourceCulture);
             }
         }
         
@@ -1042,6 +1114,24 @@ namespace CuratorHelper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Дата начала обучения.
+        /// </summary>
+        public static string StartStudyDate {
+            get {
+                return ResourceManager.GetString("StartStudyDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Выбрать дату начала обучения.
+        /// </summary>
+        public static string StartStudyDateToolTip {
+            get {
+                return ResourceManager.GetString("StartStudyDateToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Студент.
         /// </summary>
         public static string Student {
@@ -1101,6 +1191,15 @@ namespace CuratorHelper.Properties {
         public static string Students {
             get {
                 return ResourceManager.GetString("Students", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Проверьте наличие студентов в группе, а также их количество.
+        /// </summary>
+        public static string StudentsError {
+            get {
+                return ResourceManager.GetString("StudentsError", resourceCulture);
             }
         }
         

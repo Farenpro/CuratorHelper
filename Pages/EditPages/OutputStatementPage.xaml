@@ -1,0 +1,44 @@
+﻿<Page x:Class="CuratorHelper.Pages.EditPages.OutputStatementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:res="clr-namespace:CuratorHelper.Properties"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      Height="270" Width="370" MinWidth="370" MinHeight="270" TextElement.FontSize="16"
+      Title="{x:Static res:Resources.OutputStatement}" FontFamily="{StaticResource FontMain}">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="{x:Static res:Resources.OutputStatement}" Style="{StaticResource LHead}"/>
+        <Label Grid.Row="1" Content="{Binding GroupName}" Style="{StaticResource LDescription}"/>
+        <Label Grid.Row="2" Content="{x:Static res:Resources.Term}" Style="{StaticResource LDescription}"/>
+        <ComboBox x:Name="CBoxTerm" Grid.Row="3" Margin="15,5,15,15" HorizontalAlignment="Left" MinWidth="300" SelectedValue="{Binding Term, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" IsEditable="True" IsTextSearchEnabled="True"
+                 BorderBrush="Black" materialDesign:HintAssist.HelperText="{x:Static res:Resources.RequiredFillIn}" Style="{StaticResource MaterialDesignOutlinedComboBox}">
+            <ComboBox.ItemsSource>
+                <x:Array Type="{x:Type sys:Byte}">
+                    <sys:Byte>1</sys:Byte>
+                    <sys:Byte>2</sys:Byte>
+                    <sys:Byte>3</sys:Byte>
+                    <sys:Byte>4</sys:Byte>
+                    <sys:Byte>5</sys:Byte>
+                    <sys:Byte>6</sys:Byte>
+                    <sys:Byte>7</sys:Byte>
+                    <sys:Byte>8</sys:Byte>
+                </x:Array>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="4">
+            <Button x:Name="BtnCancel" Margin="5" Content="{x:Static res:Resources.Cancel}" Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="BtnCancel_Click"/>
+            <Button x:Name="BtnOutput" Margin="5" Content="{x:Static res:Resources.Output}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOutput_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

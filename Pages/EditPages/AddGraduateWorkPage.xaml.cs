@@ -2,19 +2,9 @@
 using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -47,7 +37,7 @@ namespace CuratorHelper.Pages.EditPages
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (Student != null && GWKType != null && Qualification != null && Theme != ""  && Mark != 0 && ProtectDate != null)
+            if (Student != null && GWKType != null && Qualification != null && Theme != "" && Mark != 0 && ProtectDate != null)
             {
                 if (App.Database.GraduateWorks.Where(p => p.StudentID == Student.ID && p.GraduateWorkTypeID == GWKType.ID).Count() <= 0)
                 {

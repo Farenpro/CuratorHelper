@@ -19,7 +19,7 @@ namespace CuratorHelper.Pages
         }
 
         private void TBDisplay_Checked(object sender, RoutedEventArgs e) { SubFunctions.TBShowHide(PBoxPasswordVisible, PBoxPassword, true); }
-        private void TBDisplay_Unchecked(object sender, RoutedEventArgs e){ SubFunctions.TBShowHide(PBoxPasswordVisible, PBoxPassword, false); } 
+        private void TBDisplay_Unchecked(object sender, RoutedEventArgs e) { SubFunctions.TBShowHide(PBoxPasswordVisible, PBoxPassword, false); }
 
         private void BtnEnter_Click(object sender, RoutedEventArgs e)
         {

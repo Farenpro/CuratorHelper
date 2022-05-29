@@ -1,6 +1,5 @@
 ﻿using CuratorHelper.Classes;
 using CuratorHelper.Models;
-using CuratorHelper.Windows;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,8 +27,8 @@ namespace CuratorHelper.Pages.ModulePages
             FillDGMyGroupsStudents();
         }
 
-        private void BtnStudentMarks_Click(object sender, RoutedEventArgs e) 
-        { 
+        private void BtnStudentMarks_Click(object sender, RoutedEventArgs e)
+        {
             SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 5);
             FillDGMyGroupsStudents();
         }
@@ -40,16 +39,13 @@ namespace CuratorHelper.Pages.ModulePages
             FillDGMyGroupsStudents();
         }
 
-        private void BtnStudentPenAndInc_Click(object sender, RoutedEventArgs e) 
-        { 
+        private void BtnStudentPenAndInc_Click(object sender, RoutedEventArgs e)
+        {
             SubFunctions.ShowEditWindow(DGMyGroupsStudents.SelectedItem as Student, 3);
             FillDGMyGroupsStudents();
         }
 
-        private void BtnStudentPerCard_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void BtnStudentPerCard_Click(object sender, RoutedEventArgs e) { SubFunctions.FormPersonalCard(DGMyGroupsStudents.SelectedItem as Student); }
 
         private void FillDGMyGroupsStudents()
         {

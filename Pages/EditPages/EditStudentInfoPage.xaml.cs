@@ -1,19 +1,9 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -79,15 +69,29 @@ namespace CuratorHelper.Pages.EditPages
             {
                 Student.Surname = Surname;
                 Student.Firstname = Firstname;
+                if (Middlename == "")
+                    Middlename = null;
                 Student.Middlename = Middlename;
                 Student.Birthdate = Birthdate;
                 Student.GenderID = Gender.ID;
+                if (BirthPlace == "")
+                    BirthPlace = null;
                 Student.BirthPlace = BirthPlace;
+                if (CompletedClasses == 0)
+                    CompletedClasses = null;
                 Student.CompletedClassesID = CompletedClasses;
                 Student.SchoolGraduateDate = SchoolGraduate;
+                if (SchoolName == "")
+                    SchoolName = null;
                 Student.SchoolName = SchoolName;
+                if (GuardianAddress == "")
+                    GuardianAddress = null;
                 Student.GuardianAddress = GuardianAddress;
+                if (AimedAt == "")
+                    AimedAt = null;
                 Student.AimedAt = AimedAt;
+                if (CommunityService == "")
+                    CommunityService = null;
                 Student.CommunityService = CommunityService;
                 App.DBRefresh();
                 App.Messages.ShowInfo(Properties.Resources.EditCongrats);

@@ -1,19 +1,9 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -26,6 +16,7 @@ namespace CuratorHelper.Pages.EditPages
         public User Curator { get; set; }
         public Specialization Specialization { get; set; }
         public Department Department { get; set; }
+        public DateTime StartStudyDate { get; set; }
         public EditInfoWindow Window;
         public AddGroupPage()
         {
@@ -33,6 +24,8 @@ namespace CuratorHelper.Pages.EditPages
             Window = App.Current.Windows.OfType<EditInfoWindow>().SingleOrDefault();
             Window.DataContext = this;
             DataContext = this;
+            DPStartStudyDate.DisplayDateStart = DateTime.Now.AddYears(-5);
+            DPStartStudyDate.DisplayDateEnd = DateTime.Now.AddYears(1);
             CBoxCurator.ItemsSource = App.Database.Users.ToList();
             CBoxSpecialization.ItemsSource = App.Database.Specializations.ToList();
             CBoxDepartment.ItemsSource = App.Database.Departments.ToList();
@@ -52,7 +45,8 @@ namespace CuratorHelper.Pages.EditPages
                     ID = id,
                     CuratorUserID = Curator.ID,
                     SpecializationCode = Specialization.Code,
-                    DepartmentID = Department.ID
+                    DepartmentID = Department.ID,
+                    StartStudyDate = StartStudyDate
                 };
                 App.Database.Groups.Add(group);
                 App.DBRefresh();

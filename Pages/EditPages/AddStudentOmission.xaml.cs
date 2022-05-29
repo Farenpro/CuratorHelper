@@ -1,20 +1,10 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -61,7 +51,7 @@ namespace CuratorHelper.Pages.EditPages
         {
             if (OmissionType != null)
             {
-                if (Term1Count>MaxOmissions || Term2Count>MaxOmissions || Term3Count>MaxOmissions || Term4Count>MaxOmissions || Term6Count>MaxOmissions || Term7Count>MaxOmissions || Term8Count > MaxOmissions)
+                if (Term1Count > MaxOmissions || Term2Count > MaxOmissions || Term3Count > MaxOmissions || Term4Count > MaxOmissions || Term6Count > MaxOmissions || Term7Count > MaxOmissions || Term8Count > MaxOmissions)
                 {
                     App.Messages.ShowError(Properties.Resources.OmissionCountError);
                     return;

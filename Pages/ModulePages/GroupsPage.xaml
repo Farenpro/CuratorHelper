@@ -2,7 +2,6 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:res="clr-namespace:CuratorHelper.Properties"
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       MinHeight="400" TextElement.FontSize="16"
       Title="{x:Static res:Resources.Groups}" FontFamily="{StaticResource FontMain}">
     <Grid Margin="10">
@@ -30,6 +29,13 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button x:Name="BtnEditTeachers" Width="auto" Margin="5" Content="{x:Static res:Resources.Edit}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnEditTeachers_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="auto" Header="Вывести ведомость">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="BtnOutputStatement" Width="auto" Margin="5" Content="{x:Static res:Resources.Output}" Style="{StaticResource MaterialDesignFlatSecondaryMidBgButton}" Click="BtnOutputStatement_Click"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

@@ -95,3 +95,12 @@ D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentOmissions.g.cs
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddStudentOmission.baml
 D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\StudentOmissions.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDemoExamNamePage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDemoExamPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\DemoExamsPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDemoExamNamePage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\AddDemoExamPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\ModulePages\DemoExamsPage.baml
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\CuratorHelper.csproj.ResolveComReference.cache
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\OutputStatementPage.g.cs
+D:\MyWorks\Работа 2\Новый проект\CuratorHelper\obj\Debug\Pages\EditPages\OutputStatementPage.baml

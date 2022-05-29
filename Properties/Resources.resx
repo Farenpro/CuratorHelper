@@ -126,6 +126,12 @@
   <data name="AddCourseWork" xml:space="preserve">
     <value>Добавить курсовую работу</value>
   </data>
+  <data name="AddDemoExam" xml:space="preserve">
+    <value>Добавить результат демо</value>
+  </data>
+  <data name="AddDemoExamName" xml:space="preserve">
+    <value>Добавить название демо</value>
+  </data>
   <data name="AddDiscipline" xml:space="preserve">
     <value>Добавить дисциплину</value>
   </data>
@@ -228,6 +234,12 @@
   <data name="Delete" xml:space="preserve">
     <value>Удалить</value>
   </data>
+  <data name="DemoExamExists" xml:space="preserve">
+    <value>Результат за этот демо уже выставлен</value>
+  </data>
+  <data name="DemoExamNameExists" xml:space="preserve">
+    <value>Такое название уже существует</value>
+  </data>
   <data name="DemoExams" xml:space="preserve">
     <value>Демо-экзамены</value>
   </data>
@@ -242,6 +254,9 @@
   </data>
   <data name="DisciplinesCountZero" xml:space="preserve">
     <value>Вы не выбрали дисциплины</value>
+  </data>
+  <data name="DisciplinesError" xml:space="preserve">
+    <value>Проверьте наличие выставленных по дисциплинам оценок в семестре, а также количество дисциплин</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Изменить</value>
@@ -372,6 +387,9 @@
   <data name="Order" xml:space="preserve">
     <value>Приказ</value>
   </data>
+  <data name="OrderExists" xml:space="preserve">
+    <value>Такой приказ уже существует</value>
+  </data>
   <data name="Orders" xml:space="preserve">
     <value>Приказы</value>
   </data>
@@ -380,6 +398,12 @@
   </data>
   <data name="OrderType" xml:space="preserve">
     <value>Тип приказа</value>
+  </data>
+  <data name="Output" xml:space="preserve">
+    <value>Вывести</value>
+  </data>
+  <data name="OutputStatement" xml:space="preserve">
+    <value>Вывод ведомости</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
@@ -444,6 +468,12 @@
   <data name="Specialization" xml:space="preserve">
     <value>Специальность</value>
   </data>
+  <data name="StartStudyDate" xml:space="preserve">
+    <value>Дата начала обучения</value>
+  </data>
+  <data name="StartStudyDateToolTip" xml:space="preserve">
+    <value>Выбрать дату начала обучения</value>
+  </data>
   <data name="Student" xml:space="preserve">
     <value>Студент</value>
   </data>
@@ -464,6 +494,9 @@
   </data>
   <data name="Students" xml:space="preserve">
     <value>Студенты</value>
+  </data>
+  <data name="StudentsError" xml:space="preserve">
+    <value>Проверьте наличие студентов в группе, а также их количество</value>
   </data>
   <data name="Surname" xml:space="preserve">
     <value>Фамилия</value>

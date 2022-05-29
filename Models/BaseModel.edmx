@@ -41,6 +41,22 @@
           <Property Name="Term7Mark" Type="tinyint" />
           <Property Name="Term8Mark" Type="tinyint" />
         </EntityType>
+        <EntityType Name="DemoExam">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DemoExamNameID" Type="int" Nullable="false" />
+          <Property Name="Mark" Type="tinyint" Nullable="false" />
+          <Property Name="StudentID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DemoExamName">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
         <EntityType Name="Department">
           <Key>
             <PropertyRef Name="ID" />
@@ -98,6 +114,7 @@
           <Property Name="CuratorUserID" Type="int" Nullable="false" />
           <Property Name="SpecializationCode" Type="nvarchar" MaxLength="15" Nullable="false" />
           <Property Name="DepartmentID" Type="int" Nullable="false" />
+          <Property Name="StartStudyDate" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="Object">
           <Key>
@@ -348,6 +365,30 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="Credit">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DemoExam_DemoExam">
+          <End Role="DemoExamName" Type="Self.DemoExamName" Multiplicity="1" />
+          <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemoExamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemoExam">
+              <PropertyRef Name="DemoExamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DemoExam_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemoExam">
               <PropertyRef Name="StudentID" />
             </Dependent>
           </ReferentialConstraint>
@@ -680,6 +721,8 @@
           <EntitySet Name="AppointedTeachers" EntityType="Self.AppointedTeachers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CourseWork" EntityType="Self.CourseWork" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Credit" EntityType="Self.Credit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DemoExam" EntityType="Self.DemoExam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DemoExamName" EntityType="Self.DemoExamName" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DisciplineIndex" EntityType="Self.DisciplineIndex" Schema="dbo" store:Type="Tables" />
@@ -729,6 +772,14 @@
           <AssociationSet Name="FK_Credit_Student" Association="Self.FK_Credit_Student">
             <End Role="Student" EntitySet="Student" />
             <End Role="Credit" EntitySet="Credit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DemoExam_DemoExam" Association="Self.FK_DemoExam_DemoExam">
+            <End Role="DemoExamName" EntitySet="DemoExamName" />
+            <End Role="DemoExam" EntitySet="DemoExam" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DemoExam_Student" Association="Self.FK_DemoExam_Student">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="DemoExam" EntitySet="DemoExam" />
           </AssociationSet>
           <AssociationSet Name="FK_Discipline_DisciplineType" Association="Self.FK_Discipline_DisciplineType">
             <End Role="DisciplineIndex" EntitySet="DisciplineIndex" />
@@ -886,6 +937,25 @@
           <NavigationProperty Name="Discipline" Relationship="Self.FK_Credit_Discipline" FromRole="Credit" ToRole="Discipline" />
           <NavigationProperty Name="Student" Relationship="Self.FK_Credit_Student" FromRole="Credit" ToRole="Student" />
         </EntityType>
+        <EntityType Name="DemoExam">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DemoExamNameID" Type="Int32" Nullable="false" />
+          <Property Name="Mark" Type="Byte" Nullable="false" />
+          <Property Name="StudentID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DemoExamName" Relationship="Self.FK_DemoExam_DemoExam" FromRole="DemoExam" ToRole="DemoExamName" />
+          <NavigationProperty Name="Student" Relationship="Self.FK_DemoExam_Student" FromRole="DemoExam" ToRole="Student" />
+        </EntityType>
+        <EntityType Name="DemoExamName">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="DemoExams" Relationship="Self.FK_DemoExam_DemoExam" FromRole="DemoExamName" ToRole="DemoExam" />
+        </EntityType>
         <EntityType Name="Department">
           <Key>
             <PropertyRef Name="ID" />
@@ -956,6 +1026,7 @@
           <Property Name="CuratorUserID" Type="Int32" Nullable="false" />
           <Property Name="SpecializationCode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <Property Name="StartStudyDate" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="AppointedTeachers" Relationship="Self.FK_AppointedTeachers_Group" FromRole="Group" ToRole="AppointedTeachers" />
           <NavigationProperty Name="Department" Relationship="Self.FK_Group_Department" FromRole="Group" ToRole="Department" />
           <NavigationProperty Name="Specialization" Relationship="Self.FK_Group_Specialization" FromRole="Group" ToRole="Specialization" />
@@ -1119,6 +1190,7 @@
           <Property Name="CommunityService" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CourseWorks" Relationship="Self.FK_CourseWork_Student" FromRole="Student" ToRole="CourseWork" />
           <NavigationProperty Name="Credits" Relationship="Self.FK_Credit_Student" FromRole="Student" ToRole="Credit" />
+          <NavigationProperty Name="DemoExams" Relationship="Self.FK_DemoExam_Student" FromRole="Student" ToRole="DemoExam" />
           <NavigationProperty Name="Gender" Relationship="Self.FK_Student_GenderID" FromRole="Student" ToRole="Gender" />
           <NavigationProperty Name="GraduateWorks" Relationship="Self.FK_GraduateWork_Student" FromRole="Student" ToRole="GraduateWork" />
           <NavigationProperty Name="Group" Relationship="Self.FK_Student_Group" FromRole="Student" ToRole="Group" />
@@ -1253,6 +1325,30 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="Credit">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DemoExam_DemoExam">
+          <End Role="DemoExamName" Type="Self.DemoExamName" Multiplicity="1" />
+          <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemoExamName">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemoExam">
+              <PropertyRef Name="DemoExamNameID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DemoExam_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="DemoExam" Type="Self.DemoExam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemoExam">
               <PropertyRef Name="StudentID" />
             </Dependent>
           </ReferentialConstraint>
@@ -1585,6 +1681,8 @@
           <EntitySet Name="AppointedTeachers" EntityType="Self.AppointedTeacher" />
           <EntitySet Name="CourseWorks" EntityType="Self.CourseWork" />
           <EntitySet Name="Credits" EntityType="Self.Credit" />
+          <EntitySet Name="DemoExams" EntityType="Self.DemoExam" />
+          <EntitySet Name="DemoExamNames" EntityType="Self.DemoExamName" />
           <EntitySet Name="Departments" EntityType="Self.Department" />
           <EntitySet Name="Disciplines" EntityType="Self.Discipline" />
           <EntitySet Name="DisciplineIndexes" EntityType="Self.DisciplineIndex" />
@@ -1634,6 +1732,14 @@
           <AssociationSet Name="FK_Credit_Student" Association="Self.FK_Credit_Student">
             <End Role="Student" EntitySet="Students" />
             <End Role="Credit" EntitySet="Credits" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DemoExam_DemoExam" Association="Self.FK_DemoExam_DemoExam">
+            <End Role="DemoExamName" EntitySet="DemoExamNames" />
+            <End Role="DemoExam" EntitySet="DemoExams" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DemoExam_Student" Association="Self.FK_DemoExam_Student">
+            <End Role="Student" EntitySet="Students" />
+            <End Role="DemoExam" EntitySet="DemoExams" />
           </AssociationSet>
           <AssociationSet Name="FK_Group_Department" Association="Self.FK_Group_Department">
             <End Role="Department" EntitySet="Departments" />
@@ -1789,6 +1895,24 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="DemoExams">
+            <EntityTypeMapping TypeName="CuratorHelperModel.DemoExam">
+              <MappingFragment StoreEntitySet="DemoExam">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DemoExamNameID" ColumnName="DemoExamNameID" />
+                <ScalarProperty Name="Mark" ColumnName="Mark" />
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DemoExamNames">
+            <EntityTypeMapping TypeName="CuratorHelperModel.DemoExamName">
+              <MappingFragment StoreEntitySet="DemoExamName">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Departments">
             <EntityTypeMapping TypeName="CuratorHelperModel.Department">
               <MappingFragment StoreEntitySet="Department">
@@ -1851,6 +1975,7 @@
                 <ScalarProperty Name="CuratorUserID" ColumnName="CuratorUserID" />
                 <ScalarProperty Name="SpecializationCode" ColumnName="SpecializationCode" />
                 <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="StartStudyDate" ColumnName="StartStudyDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

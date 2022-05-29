@@ -26,6 +26,7 @@ namespace CuratorHelper.Models
         public int CuratorUserID { get; set; }
         public string SpecializationCode { get; set; }
         public int DepartmentID { get; set; }
+        public System.DateTime StartStudyDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AppointedTeacher> AppointedTeachers { get; set; }

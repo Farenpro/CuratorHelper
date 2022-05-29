@@ -1,19 +1,8 @@
 ﻿using CuratorHelper.Models;
 using CuratorHelper.Windows;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CuratorHelper.Pages.EditPages
 {
@@ -24,7 +13,7 @@ namespace CuratorHelper.Pages.EditPages
     {
         public string Surname { get; set; }
         public string Firstname { get; set; }
-        #nullable enable
+#nullable enable
         public string? Middlename { get; set; }
         public Gender Gender { get; set; }
         public EditInfoWindow Window;
@@ -43,7 +32,7 @@ namespace CuratorHelper.Pages.EditPages
         {
             if (Surname != "" && Firstname != "" && Gender != null)
             {
-                if (App.Database.Teachers.Where(p => p.Surname == Surname && p.Name ==  Firstname && p.GenderID == Gender.ID).Count() <= 0)
+                if (App.Database.Teachers.Where(p => p.Surname == Surname && p.Name == Firstname && p.GenderID == Gender.ID).Count() <= 0)
                 {
                     int id = 1;
                     if (App.Database.Teachers.Count() > 0)

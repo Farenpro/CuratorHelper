@@ -56,6 +56,15 @@ namespace CuratorHelper.Windows
                 case 14:
                     MainFrame.Navigate(new AddPracticeNamePage());
                     break;
+                case 15:
+                    MainFrame.Navigate(new AddDemoExamPage());
+                    break;
+                case 16:
+                    MainFrame.Navigate(new AddDemoExamNamePage());
+                    break;
+                case 17:
+                    MainFrame.Navigate(new OutputStatementPage());
+                    break;
             }
         }
 
